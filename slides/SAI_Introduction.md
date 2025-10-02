@@ -9,7 +9,7 @@ theme: neutral
 ## Introduction
 
 Roman Mesicek
-UAS IMC Krems, 2025
+UAS IMC Krems, Winter Term 2025
 
 ---
 
