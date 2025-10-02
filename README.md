@@ -22,36 +22,14 @@ This course explores the intersection of artificial intelligence and environment
 ├── README.md                 # This file
 ├── SAI_Introduction.md       # Course introduction
 ├── SAI_Syllabus.md          # Complete course syllabus
-├── 00_material/             # Course materials and resources
-├── themes/                  # Marp presentation themes
-│   └── neutral.css          # Custom presentation theme
-├── title.md                 # Main presentation file
-└── .vscode/                 # VS Code configuration
-    └── settings.json        # Marp theme settings
+└── themes/                  # Marp presentation themes
+    └── neutral.css          # Custom presentation theme
 ```
-
-## 🎯 Learning Objectives
-
-By the end of this course, students will be able to:
-
-1. **Analyze** the environmental impact of AI and digital technologies
-2. **Evaluate** strategies for reducing AI's carbon footprint
-3. **Design** sustainable AI solutions and green algorithms
-4. **Apply** AI techniques to environmental challenges
-5. **Critically assess** the trade-offs between AI performance and sustainability
-
-## 🛠️ Technical Setup
-
-### Prerequisites
-- Basic knowledge of AI/ML concepts
-- Familiarity with programming (Python recommended)
-- Understanding of environmental science basics
 
 ### Tools Used
 - **Marp** for presentations
 - **VS Code** with Marp extension
 - **Git** for version control
-- **Python** for practical exercises
 
 ### Setting up Presentations
 This repository uses Marp for slide presentations with a custom neutral theme.
@@ -60,18 +38,6 @@ To view presentations:
 1. Install the Marp extension in VS Code
 2. Open any `.md` file with Marp frontmatter
 3. Use the preview feature to view slides
-
-## 📚 Course Materials
-
-### Week 1: Introduction
-- Introduction to Sustainability and AI
-- Climate Crisis and IT's Role
-- Course Overview and Expectations
-
-### Additional Materials
-- Research papers and articles in `00_material/`
-- Supplementary readings and resources
-- Student project guidelines
 
 ## 👥 Student Contributions
 
@@ -95,25 +61,6 @@ Students are encouraged to contribute to this repository through:
 - Include your initials: `student_initials_topic_date.md`
 - Use lowercase with underscores: `green_ai_case_study_2025.md`
 
-## 📖 Resources
-
-### Essential Readings
-- [Green AI](https://arxiv.org/abs/1907.10597) - Schwartz et al.
-- [Carbon Emissions and Large Neural Network Training](https://arxiv.org/abs/2104.10350)
-- [Energy and Policy Considerations for Deep Learning in NLP](https://arxiv.org/abs/1906.02243)
-
-### Useful Links
-- [Green Software Foundation](https://greensoftware.foundation/)
-- [Climate Change AI](https://climatechange.ai/)
-- [Sustainable Computing Research](https://www.computer.org/csdl/magazine/co)
-
-## 📝 Assessment
-
-- **Participation**: 20%
-- **Research Assignments**: 30%
-- **Project Work**: 40%
-- **Final Presentation**: 10%
-
 ## 🤝 Contributing
 
 We welcome contributions from students, researchers, and practitioners interested in sustainable AI. Please read our contribution guidelines above and feel free to:
@@ -126,14 +73,6 @@ We welcome contributions from students, researchers, and practitioners intereste
 ## 📄 License
 
 This educational content is shared under [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
-
-## 📞 Contact
-
-For questions about the course or repository:
-
-- **Course Instructor**: [Contact Information]
-- **Course Website**: [University Course Page]
-- **Discussion Forum**: [Link to Course Forum]
 
 ---
 
