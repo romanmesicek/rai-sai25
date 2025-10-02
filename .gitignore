@@ -1,0 +1,62 @@
+# Marp output files
+*.html
+*.pdf
+*.pptx
+*.png
+*.jpg
+*.jpeg
+
+# Build directories
+dist/
+build/
+output/
+exports/
+
+# Node.js dependencies (if using Marp CLI or extensions)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Cache directories
+.cache/
+.marp/
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Backup files
+*.bak
+*.backup
+
+Source files
+00_material/

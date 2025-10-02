@@ -1,0 +1,82 @@
+/* @theme neutral */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&display=swap');
+
+/* Basic slide setup */
+section {
+  font-family: 'Open Sans', sans-serif;
+  background: #ffffff;
+  color: #000000;
+  padding: 60px 60px;
+  font-size: 28px;
+  line-height: 1.4;
+}
+
+/* All headers - large but not bold, black only */
+h1 {
+  font-size: 48px;
+  font-weight: 400;
+  color: #000000;
+  margin: 0 0 40px 0;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 400;
+  color: #000000;
+  margin: 0 0 25px 0;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: 400;
+  color: #000000;
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+}
+
+/* Body text */
+p {
+  margin: 0 0 20px 0;
+  color: #000000;
+}
+
+/* Lists */
+ul, ol {
+  margin: 0 0 20px 0;
+  padding-left: 30px;
+}
+
+li {
+  margin-bottom: 8px;
+  color: #000000;
+}
+
+/* Strong text */
+strong {
+  font-weight: 700;
+  color: #000000;
+}
+
+/* Title slide - centered */
+section.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 100px 60px;
+}
+
+section.title h1 {
+  font-size: 64px;
+  margin-bottom: 40px;
+}
+
+section.title h2 {
+  font-size: 46px;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
