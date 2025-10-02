@@ -60,3 +60,6 @@ Thumbs.db
 
 # Source files
 00_material/
+
+# AI files
+CLAUDE.md

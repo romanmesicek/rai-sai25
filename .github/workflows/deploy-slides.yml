@@ -25,36 +25,72 @@ jobs:
       
       - name: Build all slides
         run: |
+          set -e  # Exit on error
           mkdir -p dist
-          
-          # Debug: Check if theme exists
-          echo "Checking for themes directory:"
+
+          # Debug: Check directories
+          echo "=== Checking project structure ==="
+          echo "Slides directory:"
+          ls -la slides/ || echo "No slides directory found"
+          echo ""
+          echo "Themes directory:"
           ls -la themes/ || echo "No themes directory found"
-          
+          echo ""
+
           # Copy images if they exist
-          [ -d "slides/images" ] && cp -r slides/images dist/
-          
+          if [ -d "slides/images" ]; then
+            echo "Copying images to dist/"
+            cp -r slides/images dist/
+          fi
+
+          # Copy themes to dist for reference
+          if [ -d "themes" ]; then
+            echo "Copying themes to dist/"
+            cp -r themes dist/
+          fi
+
           # Convert every .md to HTML and PDF
+          echo "=== Building presentations ==="
           for file in slides/*.md; do
             if [ -f "$file" ]; then
               name=$(basename "$file" .md)
+              echo "----------------------------------------"
               echo "Building: $name"
-              
-              # Try with theme first, fallback to without theme
-              if [ -d "themes" ]; then
-                echo "Using theme-set for $name"
-                marp --theme-set themes/ "$file" -o "dist/${name}.html" --allow-local-files || \
-                marp "$file" -o "dist/${name}.html" --allow-local-files
-                
-                marp --theme-set themes/ "$file" -o "dist/${name}.pdf" --allow-local-files || \
-                marp "$file" -o "dist/${name}.pdf" --allow-local-files || true
+              echo "Source file: $file"
+
+              # Build HTML with theme
+              if [ -f "themes/neutral.css" ]; then
+                echo "Building HTML with neutral theme..."
+                marp --theme themes/neutral.css --html "$file" -o "dist/${name}.html" --allow-local-files
+                echo "✓ HTML created: dist/${name}.html"
               else
-                echo "No themes directory, using default"
-                marp "$file" -o "dist/${name}.html" --allow-local-files
-                marp "$file" -o "dist/${name}.pdf" --allow-local-files || true
+                echo "Building HTML without theme..."
+                marp --html "$file" -o "dist/${name}.html" --allow-local-files
+                echo "✓ HTML created: dist/${name}.html"
+              fi
+
+              # Build PDF with theme
+              if [ -f "themes/neutral.css" ]; then
+                echo "Building PDF with neutral theme..."
+                if marp --theme themes/neutral.css --pdf "$file" -o "dist/${name}.pdf" --allow-local-files; then
+                  echo "✓ PDF created: dist/${name}.pdf"
+                else
+                  echo "⚠ PDF creation failed for $name (continuing...)"
+                fi
+              else
+                echo "Building PDF without theme..."
+                if marp --pdf "$file" -o "dist/${name}.pdf" --allow-local-files; then
+                  echo "✓ PDF created: dist/${name}.pdf"
+                else
+                  echo "⚠ PDF creation failed for $name (continuing...)"
+                fi
               fi
             fi
           done
+
+          echo "=== Build complete ==="
+          echo "Generated files:"
+          ls -lh dist/
       
       - name: Generate index
         run: |
@@ -63,67 +99,163 @@ jobs:
           <html>
           <head>
               <title>SAI25 Course Presentations</title>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
               <style>
-                  body { 
-                      font-family: system-ui; 
-                      max-width: 900px; 
-                      margin: 0 auto; 
-                      padding: 2rem;
+                  * {
+                      margin: 0;
+                      padding: 0;
+                      box-sizing: border-box;
                   }
-                  h1 { color: #000000; }
-                  .slides { 
-                      display: grid; 
-                      gap: 1rem; 
-                      margin-top: 2rem;
+                  body {
+                      font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+                      max-width: 1000px;
+                      margin: 0 auto;
+                      padding: 3rem 2rem;
+                      background: #fafafa;
+                      color: #000000;
+                      line-height: 1.6;
+                  }
+                  h1 {
+                      color: #000000;
+                      font-size: 2.5rem;
+                      font-weight: 400;
+                      margin-bottom: 0.5rem;
+                  }
+                  .subtitle {
+                      color: #666;
+                      font-size: 1.1rem;
+                      margin-bottom: 3rem;
+                  }
+                  .slides {
+                      display: grid;
+                      gap: 1.5rem;
                   }
                   .slide-item {
+                      background: #ffffff;
+                      border-radius: 12px;
+                      padding: 1.5rem;
+                      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+                      transition: box-shadow 0.2s ease, transform 0.2s ease;
+                  }
+                  .slide-item:hover {
+                      box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+                      transform: translateY(-2px);
+                  }
+                  .slide-header {
                       display: flex;
                       justify-content: space-between;
-                      align-items: center;
-                      padding: 1rem;
-                      background: #f5f5f5;
-                      border-radius: 8px;
+                      align-items: flex-start;
+                      gap: 1rem;
+                      margin-bottom: 0.75rem;
                   }
-                  .slide-title { 
-                      font-weight: 500; 
+                  .slide-info {
+                      flex: 1;
+                  }
+                  .slide-title {
+                      font-weight: 600;
+                      font-size: 1.3rem;
+                      color: #000000;
+                      margin-bottom: 0.5rem;
                       text-transform: capitalize;
                   }
-                  .slide-links { 
-                      display: flex; 
-                      gap: 0.5rem;
+                  .slide-description {
+                      color: #555;
+                      font-size: 0.95rem;
+                      line-height: 1.5;
+                      margin-top: 0.5rem;
+                  }
+                  .slide-links {
+                      display: flex;
+                      gap: 0.75rem;
+                      flex-shrink: 0;
                   }
                   a {
-                      padding: 0.5rem 1rem;
+                      padding: 0.6rem 1.2rem;
                       text-decoration: none;
-                      border-radius: 4px;
+                      border-radius: 6px;
                       color: white;
+                      font-weight: 500;
+                      font-size: 0.9rem;
+                      transition: opacity 0.2s ease, transform 0.1s ease;
+                      display: inline-block;
+                  }
+                  a:hover {
+                      opacity: 0.9;
+                      transform: scale(1.02);
+                  }
+                  a:active {
+                      transform: scale(0.98);
                   }
                   .btn-view { background: #2ea043; }
                   .btn-pdf { background: #e74c3c; }
+
+                  @media (max-width: 768px) {
+                      body {
+                          padding: 2rem 1rem;
+                      }
+                      .slide-header {
+                          flex-direction: column;
+                      }
+                      .slide-links {
+                          width: 100%;
+                      }
+                      a {
+                          flex: 1;
+                          text-align: center;
+                      }
+                  }
               </style>
           </head>
           <body>
               <h1>📚 SAI25 Course Presentations</h1>
+              <p class="subtitle">Sustainability and AI for Green | Winter Semester 2025</p>
               <div class="slides">
           EOF
-          
-          # Add all presentations to index
-          for file in dist/*.html; do
-            if [ -f "$file" ] && [ "$file" != "dist/index.html" ]; then
-              name=$(basename "$file" .html)
-              title=$(echo "$name" | sed 's/[-_]/ /g')
-              
-              echo "<div class='slide-item'>" >> dist/index.html
-              echo "  <span class='slide-title'>$title</span>" >> dist/index.html
-              echo "  <div class='slide-links'>" >> dist/index.html
-              echo "    <a href='${name}.html' class='btn-view'>View</a>" >> dist/index.html
-              [ -f "dist/${name}.pdf" ] && echo "    <a href='${name}.pdf' class='btn-pdf'>PDF</a>" >> dist/index.html
-              echo "  </div>" >> dist/index.html
-              echo "</div>" >> dist/index.html
+
+          # Add all presentations to index with descriptions
+          for file in slides/*.md; do
+            if [ -f "$file" ]; then
+              name=$(basename "$file" .md)
+
+              # Check if HTML was generated
+              if [ -f "dist/${name}.html" ]; then
+                title=$(echo "$name" | sed 's/[-_]/ /g')
+
+                # Extract description from markdown file (look for <!-- description: ... -->)
+                description=$(grep -m 1 "<!-- description:" "$file" | sed 's/<!-- description: \(.*\) -->/\1/' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
+
+                if [ -z "$description" ]; then
+                  description="Course presentation slides"
+                fi
+
+                echo "<div class='slide-item'>" >> dist/index.html
+                echo "  <div class='slide-header'>" >> dist/index.html
+                echo "    <div class='slide-info'>" >> dist/index.html
+                echo "      <div class='slide-title'>$title</div>" >> dist/index.html
+                echo "      <div class='slide-description'>$description</div>" >> dist/index.html
+                echo "    </div>" >> dist/index.html
+                echo "    <div class='slide-links'>" >> dist/index.html
+                echo "      <a href='${name}.html' class='btn-view'>View</a>" >> dist/index.html
+                [ -f "dist/${name}.pdf" ] && echo "      <a href='${name}.pdf' class='btn-pdf'>PDF</a>" >> dist/index.html
+                echo "    </div>" >> dist/index.html
+                echo "  </div>" >> dist/index.html
+                echo "</div>" >> dist/index.html
+              fi
             fi
           done
-          
-          echo "</div></body></html>" >> dist/index.html
+
+          cat >> dist/index.html << 'EOF'
+              </div>
+              <footer style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #ddd; text-align: center; color: #666; font-size: 0.9rem;">
+                  <p>UAS IMC Krems | Winter Term 2025 | Roman Mesicek</p>
+              </footer>
+          </body>
+          </html>
+          EOF
+
+          echo "=== Index page generated ==="
+          echo "Total presentations: $(find slides/ -name "*.md" -type f | wc -l)"
       
       - name: Setup Pages
         uses: actions/configure-pages@v4

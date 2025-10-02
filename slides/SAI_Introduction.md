@@ -3,6 +3,8 @@ marp: true
 theme: neutral
 ---
 
+<!-- description: Introduction to the course, exploring how AI intersects with environmental sustainability and green solutions. -->
+
 <!-- _class: title -->
 
 # Sustainability and AI for Green
