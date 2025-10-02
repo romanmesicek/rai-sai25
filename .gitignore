@@ -58,5 +58,5 @@ Thumbs.db
 *.bak
 *.backup
 
-Source files
+# Source files
 00_material/
