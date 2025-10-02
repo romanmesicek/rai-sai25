@@ -46,7 +46,7 @@ jobs:
           <!DOCTYPE html>
           <html>
           <head>
-              <title>All Presentations</title>
+              <title>SAI25 Course Presentations</title>
               <style>
                   body { 
                       font-family: system-ui; 

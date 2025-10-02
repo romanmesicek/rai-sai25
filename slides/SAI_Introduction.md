@@ -15,5 +15,5 @@ UAS IMC Krems, 2025
 
 # This course will be awesome!
 
-Yeah!
+Coming soon ... Yeah! 
 
