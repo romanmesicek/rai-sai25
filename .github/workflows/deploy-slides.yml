@@ -30,13 +30,13 @@ jobs:
           # Copy images if they exist
           [ -d "slides/images" ] && cp -r slides/images dist/
           
-          # Convert every .md to HTML and PDF
+          # Convert every .md to HTML and PDF with custom theme
           for file in slides/*.md; do
             if [ -f "$file" ]; then
               name=$(basename "$file" .md)
               echo "Building: $name"
-              marp "$file" -o "dist/${name}.html" --allow-local-files
-              marp "$file" -o "dist/${name}.pdf" --allow-local-files || true
+              marp --theme-set themes/ "$file" -o "dist/${name}.html" --allow-local-files
+              marp --theme-set themes/ "$file" -o "dist/${name}.pdf" --allow-local-files || true
             fi
           done
       
