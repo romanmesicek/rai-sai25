@@ -27,16 +27,32 @@ jobs:
         run: |
           mkdir -p dist
           
+          # Debug: Check if theme exists
+          echo "Checking for themes directory:"
+          ls -la themes/ || echo "No themes directory found"
+          
           # Copy images if they exist
           [ -d "slides/images" ] && cp -r slides/images dist/
           
-          # Convert every .md to HTML and PDF with custom theme
+          # Convert every .md to HTML and PDF
           for file in slides/*.md; do
             if [ -f "$file" ]; then
               name=$(basename "$file" .md)
               echo "Building: $name"
-              marp --theme-set themes/ "$file" -o "dist/${name}.html" --allow-local-files
-              marp --theme-set themes/ "$file" -o "dist/${name}.pdf" --allow-local-files || true
+              
+              # Try with theme first, fallback to without theme
+              if [ -d "themes" ]; then
+                echo "Using theme-set for $name"
+                marp --theme-set themes/ "$file" -o "dist/${name}.html" --allow-local-files || \
+                marp "$file" -o "dist/${name}.html" --allow-local-files
+                
+                marp --theme-set themes/ "$file" -o "dist/${name}.pdf" --allow-local-files || \
+                marp "$file" -o "dist/${name}.pdf" --allow-local-files || true
+              else
+                echo "No themes directory, using default"
+                marp "$file" -o "dist/${name}.html" --allow-local-files
+                marp "$file" -o "dist/${name}.pdf" --allow-local-files || true
+              fi
             fi
           done
       
