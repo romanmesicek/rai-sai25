@@ -54,7 +54,7 @@ jobs:
                       margin: 0 auto; 
                       padding: 2rem;
                   }
-                  h1 { color: #2ea043; }
+                  h1 { color: #000000; }
                   .slides { 
                       display: grid; 
                       gap: 1rem; 
@@ -87,7 +87,7 @@ jobs:
               </style>
           </head>
           <body>
-              <h1>📚 Course Presentations</h1>
+              <h1>📚 SAI25 Course Presentations</h1>
               <div class="slides">
           EOF
           
