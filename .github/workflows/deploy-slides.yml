@@ -126,12 +126,20 @@ jobs:
                   page_title=$(echo "$name" | sed 's/[-_]/ /g' | sed 's/\b\(.\)/\u\1/g')
                 fi
 
+                # Create temporary file without the first H1 (to avoid duplicate headers)
+                temp_md=$(mktemp)
+                sed '0,/^# /d' "$file" > "$temp_md"
+
                 # Convert markdown to HTML using pandoc with nice styling
-                pandoc "$file" -f markdown -t html5 \
+                # We set the title via metadata and remove first H1 from content
+                pandoc "$temp_md" -f markdown -t html5 \
                   --standalone \
                   --metadata title="$page_title" \
                   --css="../resources-style.css" \
                   -o "dist/resources/${name}.html"
+
+                # Clean up temp file
+                rm -f "$temp_md"
 
                 echo "✓ Resource created: dist/resources/${name}.html"
               fi
@@ -529,29 +537,24 @@ jobs:
                 # Get file size
                 size=$(du -h "$file" | cut -f1)
 
-                # Try to extract PDF metadata (title and author) if pdfinfo is available
+                # Try to extract PDF metadata (title only) if pdfinfo is available
+                # Note: We don't use author metadata as it often only shows first author
                 title=""
-                author=""
                 if command -v pdfinfo &> /dev/null; then
                   title=$(pdfinfo "$file" 2>/dev/null | grep "^Title:" | sed 's/Title:\s*//' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
-                  author=$(pdfinfo "$file" 2>/dev/null | grep "^Author:" | sed 's/Author:\s*//' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
 
-                  # Clear title if it's just "Untitled"
-                  if [ "$title" = "Untitled" ]; then
+                  # Clear title if it's just "Untitled" or empty
+                  if [ "$title" = "Untitled" ] || [ -z "$title" ]; then
                     title=""
                   fi
                 fi
 
-                # Use title and author from PDF metadata, or show generic text
+                # Use title from PDF metadata, or show filename without extension
                 if [ -n "$title" ]; then
                   citation="$title"
-                  # Add author if available
-                  if [ -n "$author" ]; then
-                    citation="$author: $title"
-                  fi
                 else
-                  # No metadata available - use generic text
-                  citation="Course Paper"
+                  # No metadata - show filename without .pdf extension
+                  citation="$name"
                 fi
 
                 echo "<div class='slide-item'>" >> dist/index.html
