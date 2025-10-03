@@ -19,25 +19,69 @@ This course explores the intersection of artificial intelligence and environment
 ## 📁 Repository Structure
 
 ```
-├── README.md                 # This file
-├── SAI_Introduction.md       # Course introduction
-├── SAI_Syllabus.md          # Complete course syllabus
-└── themes/                  # Marp presentation themes
-    └── neutral.css          # Custom presentation theme
+rai-sai25/
+├── slides/                  # Marp presentation slides
+│   ├── *.md                # Markdown slides
+│   └── images/             # Slide images
+├── resources/              # Additional course materials (Markdown)
+│   ├── useful-tools.md
+│   ├── external-links.md
+│   └── contact-support.md
+├── papers/                 # Academic papers (PDFs)
+│   └── *.pdf              # Course reference papers
+├── themes/                 # Marp presentation themes
+│   └── neutral.css        # Custom neutral theme
+├── .github/workflows/      # GitHub Actions
+│   └── deploy-slides.yml  # Automated deployment
+├── README.md              # This file
+├── SAI_Syllabus.md        # Complete course syllabus
+└── DEPLOYMENT_GUIDE.md    # Deployment documentation
 ```
 
-### Tools Used
-- **Marp** for presentations
-- **VS Code** with Marp extension
-- **Git** for version control
+## 🌐 Course Website
 
-### Setting up Presentations
-This repository uses Marp for slide presentations with a custom neutral theme.
+All materials are automatically deployed to GitHub Pages:
+- **📊 Slides** - HTML and PDF presentations
+- **🔗 Resources** - Additional materials and links
+- **📚 Papers** - Downloadable academic literature
 
-To view presentations:
-1. Install the Marp extension in VS Code
-2. Open any `.md` file with Marp frontmatter
-3. Use the preview feature to view slides
+Visit: [https://romanmesicek.github.io/rai-sai25/](https://romanmesicek.github.io/rai-sai25/)
+
+## 🚀 Quick Start
+
+### Adding Slides
+1. Create `.md` file in `slides/`
+2. Add Marp frontmatter:
+```markdown
+---
+marp: true
+theme: neutral
+---
+
+<!-- description: Brief description for index page. -->
+
+# Your Title
+```
+3. Commit and push - automatically deployed!
+
+### Adding Resources
+1. Create `.md` file in `resources/`
+2. Add H1 heading and description
+3. Push - converts to styled HTML automatically
+
+### Adding Papers
+1. Copy PDF to `papers/` directory
+2. Use format: `author-year-topic.pdf`
+3. Push - appears on website with download button
+
+See [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md) for details.
+
+## 🛠️ Technology Stack
+
+- **Marp** - Markdown presentations
+- **Pandoc** - Resource conversion
+- **GitHub Actions** - Automated deployment
+- **GitHub Pages** - Website hosting
 
 ## 👥 Student Contributions
 

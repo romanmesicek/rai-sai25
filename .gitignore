@@ -1,10 +1,14 @@
 # Marp output files
 *.html
-*.pdf
 *.pptx
 *.png
 *.jpg
 *.jpeg
+
+# PDFs are ignored by default (Marp outputs)
+*.pdf
+# BUT allow PDFs in papers directory
+!papers/*.pdf
 
 # Build directories
 dist/
@@ -60,10 +64,6 @@ Thumbs.db
 
 # Source files
 00_material/
-
-# Papers - PDFs should be committed, but can be excluded if too large
-# Comment out the line below if you want to track papers in git
-# papers/*.pdf
 
 # AI files
 CLAUDE.md

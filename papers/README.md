@@ -39,7 +39,19 @@ When in doubt, link to the paper instead of uploading it.
 
 ## Current Papers
 
-Papers will be listed here automatically. Check the [course website](https://romanmesicek.github.io/rai-sai25/) to browse available papers.
+**Status: No papers uploaded yet.**
+
+Once you add PDF files to this directory, they will automatically appear on the course website with:
+- Formatted title (extracted from PDF metadata or filename)
+- File size
+- Download button
+
+Example PDFs you could add:
+- `walker-2024-ai-sustainability.pdf` - "Artificial Intelligence for Sustainability" by Thomas Walker et al.
+- `demirel-2023-sustainable-engineering.pdf` - "Sustainable Engineering" by Yasar Demirel
+- `sharma-2024-green-computing.pdf` - "Green Computing for Sustainable Smart Cities" by Neha Sharma et al.
+
+Check the [course website](https://romanmesicek.github.io/rai-sai25/) once papers are added to see them listed.
 
 ---
 

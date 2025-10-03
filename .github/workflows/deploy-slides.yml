@@ -120,10 +120,16 @@ jobs:
                 name=$(basename "$file" .md)
                 echo "Building resource: $name"
 
+                # Extract title from first H1 in markdown, or use formatted filename
+                page_title=$(grep -m 1 "^# " "$file" | sed 's/^# //' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
+                if [ -z "$page_title" ]; then
+                  page_title=$(echo "$name" | sed 's/[-_]/ /g' | sed 's/\b\(.\)/\u\1/g')
+                fi
+
                 # Convert markdown to HTML using pandoc with nice styling
                 pandoc "$file" -f markdown -t html5 \
                   --standalone \
-                  --metadata title="$name" \
+                  --metadata title="$page_title" \
                   --css="../resources-style.css" \
                   -o "dist/resources/${name}.html"
 
@@ -557,8 +563,8 @@ jobs:
               if [ -f "$file" ]; then
                 filename=$(basename "$file")
 
-                # Skip README and .gitkeep files
-                if [[ "$filename" == "README.md" ]] || [[ "$filename" == ".gitkeep" ]]; then
+                # Skip README, .gitkeep, and other non-PDF files
+                if [[ "$filename" == "README.md" ]] || [[ "$filename" == ".gitkeep" ]] || [[ ! "$filename" =~ \.pdf$ ]]; then
                   continue
                 fi
 
@@ -612,9 +618,16 @@ jobs:
           EOF
           fi
 
+          # Add footer with conditional contact link
+          echo "              <footer style=\"margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #ddd; text-align: center; color: #666; font-size: 0.9rem;\">" >> dist/index.html
+          echo "                  <p>UAS IMC Krems | Winter Term 2025 | Roman Mesicek</p>" >> dist/index.html
+
+          # Add contact link if contact-support.md exists
+          if [ -f "dist/resources/contact-support.html" ]; then
+            echo "                  <p style=\"margin-top: 0.5rem;\"><a href=\"resources/contact-support.html\" style=\"color: #666; text-decoration: underline;\">Contact & Support</a></p>" >> dist/index.html
+          fi
+
           cat >> dist/index.html << 'EOF'
-              <footer style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #ddd; text-align: center; color: #666; font-size: 0.9rem;">
-                  <p>UAS IMC Krems | Winter Term 2025 | Roman Mesicek</p>
               </footer>
           </body>
           </html>

@@ -17,7 +17,6 @@ This page contains a curated list of tools, frameworks, and platforms relevant t
 ### CodeCarbon
 - **Website:** [https://codecarbon.io/](https://codecarbon.io/)
 - **Description:** Track and reduce CO2 emissions from your computing
-- **GitHub:** [https://github.com/mlco2/codecarbon](https://github.com/mlco2/codecarbon)
 - **Features:**
   - Python package for tracking emissions
   - Real-time monitoring
@@ -30,13 +29,6 @@ This page contains a curated list of tools, frameworks, and platforms relevant t
 - **Description:** Measure, monitor and reduce cloud carbon emissions
 - **Supports:** AWS, Azure, GCP
 
-## Resources & Documentation
+## Contact & Support
 
-- **Green Software Foundation:** [https://greensoftware.foundation/](https://greensoftware.foundation/)
-- **Sustainable Web Design:** [https://sustainablewebdesign.org/](https://sustainablewebdesign.org/)
-- **Climate Change AI:** [https://www.climatechange.ai/](https://www.climatechange.ai/)
-
-## Additional Reading
-
-- Green AI Research Papers: [Papers with Code - Green AI](https://paperswithcode.com/task/green-ai)
-- ACM Digital Library: Search for "sustainable computing" and "green AI"
+For additional resources or broken links, please contact the course instructor.
