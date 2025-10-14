@@ -22,15 +22,15 @@ This course explores the intersection of artificial intelligence and environment
 rai-sai25/
 ├── slides/                  # Marp presentation slides
 │   ├── *.md                # Markdown slides
-│   └── images/             # Slide images
+│   ├── images/             # Slide images
+│   └── themes/             # Marp presentation themes
+│       └── neutral.css     # Custom neutral theme
 ├── resources/              # Additional course materials (Markdown)
 │   ├── useful-tools.md
 │   ├── external-links.md
 │   └── contact-support.md
 ├── papers/                 # Academic papers (PDFs)
 │   └── *.pdf              # Course reference papers
-├── themes/                 # Marp presentation themes
-│   └── neutral.css        # Custom neutral theme
 ├── .github/workflows/      # GitHub Actions
 │   └── deploy-slides.yml  # Automated deployment
 ├── README.md              # This file

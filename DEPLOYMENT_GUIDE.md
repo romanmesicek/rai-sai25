@@ -357,9 +357,10 @@ Manual trigger also available via GitHub Actions UI.
 **Issue:** Slides don't use neutral theme
 
 **Solutions:**
-1. Verify `themes/neutral.css` exists
+1. Verify `slides/themes/neutral.css` exists
 2. Check frontmatter: `theme: neutral`
-3. Review workflow logs for theme errors
+3. Verify `.vscode/settings.json` points to `./slides/themes/neutral.css`
+4. Review workflow logs for theme errors
 
 ---
 
@@ -415,7 +416,7 @@ To add more content types (e.g., videos, datasets):
 
 ```bash
 # Preview slides
-marp --theme themes/neutral.css slides/your-file.md -o preview.html
+marp --theme slides/themes/neutral.css slides/your-file.md -o preview.html
 
 # Preview resources
 pandoc resources/your-file.md -o preview.html --standalone --css=your-style.css

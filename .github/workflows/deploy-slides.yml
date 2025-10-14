@@ -7,6 +7,7 @@ on:
     paths:
       - 'slides/**.md'           # Trigger on slides changes
       - 'slides/images/**'       # Trigger on image changes
+      - 'slides/themes/**'       # Trigger on theme changes
       - 'resources/**.md'        # Trigger on resources changes
       - 'papers/**.pdf'          # Trigger on papers changes
   workflow_dispatch:             # Manual trigger available
@@ -41,7 +42,7 @@ jobs:
           ls -la slides/ || echo "No slides directory found"
           echo ""
           echo "Themes directory:"
-          ls -la themes/ || echo "No themes directory found"
+          ls -la slides/themes/ || echo "No themes directory found"
           echo ""
 
           # Copy images if they exist
@@ -51,9 +52,9 @@ jobs:
           fi
 
           # Copy themes to dist for reference
-          if [ -d "themes" ]; then
+          if [ -d "slides/themes" ]; then
             echo "Copying themes to dist/"
-            cp -r themes dist/
+            cp -r slides/themes dist/themes
           fi
 
           # Convert every .md to HTML and PDF
@@ -66,9 +67,9 @@ jobs:
               echo "Source file: $file"
 
               # Build HTML with theme
-              if [ -f "themes/neutral.css" ]; then
+              if [ -f "slides/themes/neutral.css" ]; then
                 echo "Building HTML with neutral theme..."
-                marp --theme themes/neutral.css --html "$file" -o "dist/${name}.html" --allow-local-files
+                marp --theme slides/themes/neutral.css --html "$file" -o "dist/${name}.html" --allow-local-files
                 echo "✓ HTML created: dist/${name}.html"
               else
                 echo "Building HTML without theme..."
@@ -77,9 +78,9 @@ jobs:
               fi
 
               # Build PDF with theme
-              if [ -f "themes/neutral.css" ]; then
+              if [ -f "slides/themes/neutral.css" ]; then
                 echo "Building PDF with neutral theme..."
-                if marp --theme themes/neutral.css --pdf "$file" -o "dist/${name}.pdf" --allow-local-files; then
+                if marp --theme slides/themes/neutral.css --pdf "$file" -o "dist/${name}.pdf" --allow-local-files; then
                   echo "✓ PDF created: dist/${name}.pdf"
                 else
                   echo "⚠ PDF creation failed for $name (continuing...)"
