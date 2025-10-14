@@ -7,8 +7,9 @@ theme: neutral
 
 <!-- _class: title -->
 
-## SAI Part 1
+
 # Global Sustainability Challenges
+## SAI Part 1
 
 IMC University of Applied Sciences Krems, Austria
 Roman H. Mesicek
