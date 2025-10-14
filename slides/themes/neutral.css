@@ -37,6 +37,19 @@ h3 {
   line-height: 1.2;
 }
 
+/* H6 als Quellenangabe */
+h6 {
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+  font-size: 0.6em;
+  font-weight: 300;
+  color: #666666;
+  font-style: italic;
+  margin: 0;
+  text-align: right;
+}
+
 /* Body text */
 p {
   margin: 0 0 20px 0;
@@ -60,6 +73,11 @@ strong {
   color: #000000;
 }
 
+/* Links */
+a {
+  text-decoration: underline;
+}
+
 /* Title slide - centered */
 section.title {
   display: flex;
@@ -79,4 +97,25 @@ section.title h2 {
   font-size: 46px;
   font-weight: 300;
   margin-bottom: 40px;
+}
+
+/* Group work / discussion / exercise - green border frame */
+section.groupwork {
+  border: 8px solid #28a745;
+  padding: 50px;
+}
+
+section.groupwork::before {
+  content: "Group Work / Discussion / Exercise";
+  position: absolute;
+  top: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #28a745;
+  color: #ffffff;
+  padding: 8px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
