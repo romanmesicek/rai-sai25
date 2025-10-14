@@ -3,7 +3,7 @@ marp: true
 theme: neutral
 ---
 
-<!-- description: Sustainability challenges and solutions -->
+<!-- description: Global Sustainability Challenges -->
 
 <!-- _class: title -->
 
