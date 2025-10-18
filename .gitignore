@@ -1,9 +1,17 @@
 # Marp output files
 *.html
 *.pptx
+
+# Image files (Marp outputs) - ignore by default
 *.png
 *.jpg
 *.jpeg
+# BUT allow images in slides/images directory (for presentations)
+!slides/images/*.png
+!slides/images/*.jpg
+!slides/images/*.jpeg
+# Exclude original/backup images
+slides/images/originals/
 
 # PDFs are ignored by default (Marp outputs)
 *.pdf
@@ -61,6 +69,19 @@ Thumbs.db
 # Backup files
 *.bak
 *.backup
+BACKUP*
+*BACKUP*
+
+# Scripts and utilities
+*.sh
+rename_images.sh
+
+# Reports and summaries
+*RESIZE_SUMMARY*
+*resize_report*
+*.txt
+*LAYOUT_OPTIMIZATION*
+*MARP_IMAGES*
 
 # Source files
 00_material/

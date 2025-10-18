@@ -26,15 +26,11 @@ Combining ecological and social challenges in one overview.
 
 <!-- _class: groupwork -->
 
-# State of the world  - Challenges
+# State of the World - Challenges
 
-**Question**: What are the biggest global challenges you can identify?
+## **Goal**: Create a comprehensive picture of the socio-ecological challenges facing our society. 
 
-- 5 minutes individual desktop research for your 
-- 15 minutes group work for additional research, to prioritize and formulate major points 
-- 15 minutes preparation of a short text with links and pictures on the topic including the major findings 
-- Post to Padlet
-- 5 minutes each group for a short presentation
+Structuring based on a selection of thematic areas from the Doughnut Economics concept: **Ecological Ceilings** and **Social Foundations**.
 
 ---
 
@@ -42,11 +38,11 @@ Combining ecological and social challenges in one overview.
 
 ###### Steffen, W., Crutzen, P. J., & McNeill, J. R. (2016). The Anthropocene: Are humans now overwhelming the great forces of nature?. In The New World History (pp. 440-459). University of California Press.
 
-![width:700px center](images/pt01_slide05_img3.png)
-![bg](images/pt01_slide05_img1.jpg)
-![bg](images/pt01_slide05_img2.jpg)
-![bg](images/pt01_slide05_img4.jpg)
-![bg](images/pt01_slide05_img5.jpg)
+![width:700px center](images/pt01_slide05_img3_1206x240.png)
+![bg](images/pt01_slide05_img1_692x745.jpg)
+![bg](images/pt01_slide05_img2_558x694.jpg)
+![bg](images/pt01_slide05_img4_400x300.jpg)
+![bg](images/pt01_slide05_img5_800x533.jpg)
 
 
 ---
@@ -55,14 +51,14 @@ Combining ecological and social challenges in one overview.
 
 An [Introduction by Johan Rockström (TED Talk, 2010)](https://www.youtube.com/watch?v=RgqtrlixYR4) on the state of the world.
 
-![height:100px](images/pt01_slide06_img2.jpg)
-![bg right:74% 105%](images/pt01_slide06_img1.png)
+![height:100px](images/pt01_slide06_img2_800x600.jpg)
+![bg right:74% 105%](images/pt01_slide06_img1_1040x776.png)
 
 ---
 
 # Pathways of the earth system
 
-![Pathways](images/1_Planetary-Boundaries_website_img_1.png)
+![Pathways](images/1_Planetary-Boundaries_website_img_1_708x452.png)
 
 ###### Steffen, W., Rockström, J., Richardson, K., Lenton, T. M., Folke, C., Liverman, D., ... & Schellnhuber, H. J. (2018). Trajectories of the Earth System in the Anthropocene. Proceedings of the National Academy of Sciences, 115(33), 8252-8259.
 
@@ -74,7 +70,7 @@ An [Introduction by Johan Rockström (TED Talk, 2010)](https://www.youtube.com/w
 
 
 
-![height:380px](images/PB-over-time-v3_2.png)
+![height:380px](images/PB-over-time-v3_2_1920x627.png)
 
 Defining a safe operating space for humanity.
 
@@ -82,39 +78,33 @@ Defining a safe operating space for humanity.
 
 ---
 
-# Humanity’s selfie
+# The "Doughnut-View" of the world
 
-Humanity is currently living far outside the Doughnut, on both sides - social and ecological - as all of the red wedges show. Billions of people still cannot meet their most essential needs while humanity has already collectively overshot multiple planetary boundaries.
+***The social foundation** – below which lies critical human deprivation
 
-![bg right 90%](images/pt01_slide10_img2.png)
+**The ecological ceiling** – beyond which lies critical planetary degradation
 
+![bg left 90%](images/pt01_slide13_img1_680x680.png)
+
+###### Raworth, K. (2018). Doughnut economics: Seven ways to think like a 21st century economist. Chelsea Green Publishing.
 
 ---
 
 # The Doughnut explained
 
+The inner ring of the Doughnut, **the Social Foundation**, sets a boundary for meeting the needs of all people. It includes life’s essentials for human wellbeing - inspired by and derived from the Sustainable Development Goals of the United Nations. Millions of people worldwide still cannot meet their essential needs.
 
-The inner ring of the Doughnut, **the Social Foundation**, sets a boundary for meeting the needs of all people.  
-It includes life’s essentials for human wellbeing - inspired by and derived from the Sustainable Development Goals of the United Nations. Millions of people worldwide still cannot meet their essential needs.
-
-The outer ring of the Doughnut, **the Ecological Ceiling**, sets a boundary for a healthy planetary home.  
-This ceiling has been defined by the framework of 9 planetary boundaries. Since its creation in 2009 the framework has been revised several times. In the latest update (2023), six of the nine boundaries have been transgressed.
-Human activity is overshooting many of the planetary boundaries.
-
+The outer ring of the Doughnut, **the Ecological Ceiling**, sets a boundary for a healthy planetary home.  This ceiling has been defined by the framework of 9 planetary boundaries. Since its creation in 2009 the framework has been revised several times. In the latest update (2023), six of the nine boundaries have been transgressed. Human activity is overshooting many of the planetary boundaries.
 
 ---
 
-# The essence of the Doughnut
+# Humanity’s selfie
 
-1. The social foundation – below which lies critical human deprivation
-2. The ecological ceiling – beyond which lies critical planetary degradation
+**Humanity is currently living far outside the Doughnut**, on both sides - social and ecological - as all of the red wedges show. Billions of people still cannot meet their most essential needs while humanity has already collectively overshot multiple planetary boundaries.
 
-These two boundaries are foundational in the sense that humanity should always seek to avoid critical human deprivation and critical planetary degradation. But the ‘best’ way to define their specific dimensions and measure their current status relative to desired outcomes will keep evolving over time.
+![bg right 90%](images/pt01_slide10_img2_1080x1079.png)
 
-Original material; © with the author(s).
-
-![width:300px center](images/pt01_slide13_img1.png)
-
+###### Fanning, A. L., & Raworth, K. (2025). Doughnut of social and planetary boundaries monitors a world out of balance. Nature, 646(8083), 47-56.
 
 ---
 
@@ -122,18 +112,17 @@ Original material; © with the author(s).
 
 # State of the world  - Connections
 
-Question: For the challenges identified – how do they relate to each other?
+## Question
+
+For the challenges identified – how do they relate to each other?
 
 Connecting the dots: joint discussion and looking at the interlinkages of the topics you discovered.
-
-Group work  / discussion / exercise
-
 
 ---
 
 # Links between social, ecological and economic issues explored
 
-![width:600px](images/pt01_slide15_img1.png)
+![width:600px](images/pt01_slide15_img1_961x505.png)
 
 An interesting take on the connections between the issues by [Hans Rosling (TED Talk, 2010)](https://www.youtube.com/watch?v=fTznEIZRkLg) .
 
@@ -163,8 +152,8 @@ Cambridge Dictionary (2011) describes sustainability as something that is “abl
 
 His book Sylvicultura oeconomica, oder **haußwirthliche Nachricht und Naturmäßige Anweisung zur wilden Baum-Zucht** (1713) was the first comprehensive treatise about forestry. He is considered to be the father of sustainable yield forestry.
 
-![bg right:33%](images/pt01_slide18_img1.png) 
-![bg](images/pt01_slide18_img2.png)
+![bg right:33%](images/pt01_slide18_img1_200x250.png)
+![bg](images/pt01_slide18_img2_498x810.png)
 
 
 ---
@@ -177,7 +166,7 @@ sustainable without sudden and uncontrolled collapse; and
 capable of satisfying the basic material requirements of all of its people.”
 The Limits of Growth warned of an „overshoot“ – a situation of economic and societal collapse from unsustainable use of natural resources.
 
-![height:400px center](images/pt01_slide19_img1.png)
+![bg right:40% fit](images/pt01_slide19_img1_182x276.png)
 
 
 ---
@@ -190,7 +179,7 @@ It contains two key concepts: the concept of needs, in particular the essential 
 
 Gro Harlem Brundtland
 
-![height:400px center](images/pt01_slide20_img1.png)
+![bg right:50% contain](images/pt01_slide20_img1_704x396.png)
 
 <!-- Notes: “Environment and development are not separate challenges. Development cannot subsist on a deteriorating environmental resource base; the environment cannot be protected when growth leaves out of account the costs of environmental destruction. These problems cannot be treated separately by fragmented institutions and policies. They are linked in a complex system of cause and effect.” (Source: World Commission on Environment and Development (1987) Our Common Future, Oxford University Press, Oxford, p. 37.)
  -->
@@ -217,7 +206,7 @@ Shell
 
 Triangle
 
-![height:350px](images/pt01_slide22_img1.png) ![height:350px](images/pt01_slide22_img2.png)
+![height:300px](images/pt01_slide22_img1_1000x560.png) ![height:300px](images/pt01_slide22_img2_700x525.png)
 
 
 ---
@@ -226,7 +215,7 @@ Triangle
 
 We should aim for a high human development and low ecological impact.
 
-![width:800px center](images/pt01_slide23_img1.jpg)
+![width:900px center](images/pt01_slide23_img1_1163x798.jpg)
 
 <!-- Notes: An Article from 2015 "Only eight countries meet two key conditions for sustainable development as United Nations adopts Sustainable Development Goals":
  
@@ -249,7 +238,7 @@ A political framework for Sustainable Development.
 
 17 goals until 2030: universal, indivisible, transformative.
 
-![width:750px center](images/pt01_slide25_img1.png)
+![width:850px center](images/pt01_slide25_img1_726x451.png)
 
 
 ---
@@ -267,9 +256,9 @@ The goals and targets are universal, meaning they apply to all countries around 
 
 Identifying the major themes of ths 17 goals.
 
-![width:600px center](images/pt01_slide27_img1.png)
+![bg right:50% contain](images/pt01_slide27_img1_1113x844.png)
 
-![width:500px center](images/pt01_slide27_img2.png)
+![width:420px](images/pt01_slide27_img2_600x600.png)
 
 <!-- Notes: What are the elements underpinning the Sustainable Development Goals? 
 The Goals and targets will stimulate action over the next 15 years in areas of critical importance: people, planet, prosperity, peace and partnership. 
@@ -293,5 +282,5 @@ Partnership - to mobilize the means required to implement this agenda through a 
 
 Source: Jarker/Lokrantz/Azote
 
-![width:600px center](images/pt01_slide28_img1.png)
+![width:750px center](images/pt01_slide28_img1_885x566.png)
 
