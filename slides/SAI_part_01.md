@@ -1,6 +1,7 @@
 ---
 marp: true
 theme: neutral
+size: 16:9
 ---
 
 <!-- description: Global Sustainability Challenges -->
@@ -12,7 +13,7 @@ theme: neutral
 ## SAI Part 1
 
 IMC University of Applied Sciences Krems, Austria
-Roman H. Mesicek
+Roman Mesicek
 
 
 ---
@@ -38,11 +39,11 @@ Structuring based on a selection of thematic areas from the Doughnut Economics c
 
 ###### Steffen, W., Crutzen, P. J., & McNeill, J. R. (2016). The Anthropocene: Are humans now overwhelming the great forces of nature?. In The New World History (pp. 440-459). University of California Press.
 
-![width:700px center](images/pt01_slide05_img3_1206x240.png)
-![bg](images/pt01_slide05_img1_692x745.jpg)
-![bg](images/pt01_slide05_img2_558x694.jpg)
-![bg](images/pt01_slide05_img4_400x300.jpg)
-![bg](images/pt01_slide05_img5_800x533.jpg)
+![width:700px center](images_part_01/pt01_slide05_img3_1206x240.png)
+![bg](images_part_01/pt01_slide05_img1_692x745.jpg)
+![bg](images_part_01/pt01_slide05_img2_558x694.jpg)
+![bg](images_part_01/pt01_slide05_img4_400x300.jpg)
+![bg](images_part_01/pt01_slide05_img5_800x533.jpg)
 
 
 ---
@@ -51,14 +52,14 @@ Structuring based on a selection of thematic areas from the Doughnut Economics c
 
 An [Introduction by Johan Rockström (TED Talk, 2010)](https://www.youtube.com/watch?v=RgqtrlixYR4) on the state of the world.
 
-![height:100px](images/pt01_slide06_img2_800x600.jpg)
-![bg right:74% 105%](images/pt01_slide06_img1_1040x776.png)
+![height:100px](images_part_01/pt01_slide06_img2_800x600.jpg)
+![bg right:74% 105%](images_part_01/pt01_slide06_img1_1040x776.png)
 
 ---
 
 # Pathways of the earth system
 
-![Pathways](images/1_Planetary-Boundaries_website_img_1_708x452.png)
+![Pathways](images_part_01/1_Planetary-Boundaries_website_img_1_708x452.png)
 
 ###### Steffen, W., Rockström, J., Richardson, K., Lenton, T. M., Folke, C., Liverman, D., ... & Schellnhuber, H. J. (2018). Trajectories of the Earth System in the Anthropocene. Proceedings of the National Academy of Sciences, 115(33), 8252-8259.
 
@@ -70,7 +71,7 @@ An [Introduction by Johan Rockström (TED Talk, 2010)](https://www.youtube.com/w
 
 
 
-![height:380px](images/PB-over-time-v3_2_1920x627.png)
+![height:380px](images_part_01/PB-over-time-v3_2_1920x627.png)
 
 Defining a safe operating space for humanity.
 
@@ -84,7 +85,7 @@ Defining a safe operating space for humanity.
 
 **The ecological ceiling** – beyond which lies critical planetary degradation
 
-![bg left 90%](images/pt01_slide13_img1_680x680.png)
+![bg left 90%](images_part_01/pt01_slide13_img1_680x680.png)
 
 ###### Raworth, K. (2018). Doughnut economics: Seven ways to think like a 21st century economist. Chelsea Green Publishing.
 
@@ -92,9 +93,24 @@ Defining a safe operating space for humanity.
 
 # The Doughnut explained
 
+<style scoped>
+.cols {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 2rem;
+  padding-right: 1rem;
+}
+
+</style>
+
+
+<div class="cols">
+
 The inner ring of the Doughnut, **the Social Foundation**, sets a boundary for meeting the needs of all people. It includes life’s essentials for human wellbeing - inspired by and derived from the Sustainable Development Goals of the United Nations. Millions of people worldwide still cannot meet their essential needs.
 
 The outer ring of the Doughnut, **the Ecological Ceiling**, sets a boundary for a healthy planetary home.  This ceiling has been defined by the framework of 9 planetary boundaries. Since its creation in 2009 the framework has been revised several times. In the latest update (2023), six of the nine boundaries have been transgressed. Human activity is overshooting many of the planetary boundaries.
+
+</div>
 
 ---
 
@@ -102,14 +118,17 @@ The outer ring of the Doughnut, **the Ecological Ceiling**, sets a boundary for 
 
 **Humanity is currently living far outside the Doughnut**, on both sides - social and ecological - as all of the red wedges show. Billions of people still cannot meet their most essential needs while humanity has already collectively overshot multiple planetary boundaries.
 
-![bg right 90%](images/pt01_slide10_img2_1080x1079.png)
+![bg right 90%](images_part_01/pt01_slide10_img2_1080x1079.png)
 
 ###### Fanning, A. L., & Raworth, K. (2025). Doughnut of social and planetary boundaries monitors a world out of balance. Nature, 646(8083), 47-56.
 
+<!-- Notes: 
 ---
+
 
 <!-- _class: groupwork -->
 
+<!-- Notes: 
 # State of the world  - Connections
 
 ## Question
@@ -117,12 +136,13 @@ The outer ring of the Doughnut, **the Ecological Ceiling**, sets a boundary for 
 For the challenges identified – how do they relate to each other?
 
 Connecting the dots: joint discussion and looking at the interlinkages of the topics you discovered.
-
+ 
+-->
 ---
 
 # Links between social, ecological and economic issues explored
 
-![width:600px](images/pt01_slide15_img1_961x505.png)
+![width:600px](images_part_01/pt01_slide15_img1_961x505.png)
 
 An interesting take on the connections between the issues by [Hans Rosling (TED Talk, 2010)](https://www.youtube.com/watch?v=fTznEIZRkLg) .
 
@@ -137,11 +157,10 @@ History and Definitions.
 
 # Defining Sustainability
 
-Looking at standard dictionary definitions of ‘sustainable’ or ‘sustainability’ it can be seen that although sustainability does not have a rigid ‘one size fits all’ definition, it generally refers to the ability for something to last for a long time or indefinitely 
+Looking at standard dictionary definitions of ‘sustainable’ or ‘sustainability’ it can be seen that although sustainability does not have a rigid ‘one size fits all’ definition, it generally refers to **the ability for something to last for a long time or indefinitely**. 
 
-Oxford Dictionary (2011) defines sustainability as being “able to be maintained at a certain rate or level” 
-
-Cambridge Dictionary (2011) describes sustainability as something that is “able to continue over a period of time”
+- Oxford Dictionary (2011) defines sustainability as being “able to be maintained at a certain rate or level” 
+- Cambridge Dictionary (2011) describes sustainability as something that is “able to continue over a period of time”
 
 
 ---
@@ -152,34 +171,33 @@ Cambridge Dictionary (2011) describes sustainability as something that is “abl
 
 His book Sylvicultura oeconomica, oder **haußwirthliche Nachricht und Naturmäßige Anweisung zur wilden Baum-Zucht** (1713) was the first comprehensive treatise about forestry. He is considered to be the father of sustainable yield forestry.
 
-![bg right:33%](images/pt01_slide18_img1_200x250.png)
-![bg](images/pt01_slide18_img2_498x810.png)
+![bg right:33%](images_part_01/pt01_slide18_img1_200x250.png)
+![bg](images_part_01/pt01_slide18_img2_498x810.png)
 
 
 ---
 
-# Club of Rome “Limits of Growth”, 1972
+# Club of Rome “Limits of Growth” (1972)
 
-The first time the term ‘sustainable’ was used “in the modern sense” was as part of the Club of Rome. This came to the fore as a part of the publication of Limits to Growth, a report that described a particular state in which the global population would achieve balance or equilibrium. “Describing the desirable “state of global equilibrium”, the authors used the word “sustainable”: 
-“We are searching for a model output that represents a world system that is: 
-sustainable without sudden and uncontrolled collapse; and 
-capable of satisfying the basic material requirements of all of its people.”
-The Limits of Growth warned of an „overshoot“ – a situation of economic and societal collapse from unsustainable use of natural resources.
+The first time the term ‘sustainable’ was used “in the modern sense” was by the Club of Rome. In it's publication of **The Limits to Growth**, a report that described a particular state in which the global population would achieve balance or equilibrium. 
 
-![bg right:40% fit](images/pt01_slide19_img1_182x276.png)
+*"We are searching for a model output that represents a world system that is: sustainable without sudden and uncontrolled collapse; and capable of satisfying the basic material requirements of all of its people.”*
+
+![bg right:38% fit](images_part_01/pt01_slide19_img1_182x276.png)
 
 
 ---
 
-# “Our Common Future” UN Report, 1987
+# “Our Common Future” 
+United Nations Report (1987)
 
 "Sustainable development is a development that meets the needs of the present without compromising the ability of future generations to meet their own needs". 
 
 It contains two key concepts: the concept of needs, in particular the essential needs of the world's poor, to which overriding priority should be given; And the idea of limitations imposed by the state of technology and social organization on the environment's ability to meet present and future needs."
 
-Gro Harlem Brundtland
+![bg right:30% contain](images_part_01/pt01_slide20_img1_704x396.png)
 
-![bg right:50% contain](images/pt01_slide20_img1_704x396.png)
+###### Gro Harlem Brundtland
 
 <!-- Notes: “Environment and development are not separate challenges. Development cannot subsist on a deteriorating environmental resource base; the environment cannot be protected when growth leaves out of account the costs of environmental destruction. These problems cannot be treated separately by fragmented institutions and policies. They are linked in a complex system of cause and effect.” (Source: World Commission on Environment and Development (1987) Our Common Future, Oxford University Press, Oxford, p. 37.)
  -->
@@ -191,31 +209,40 @@ Gro Harlem Brundtland
 
 Two different schools of economics.
 
-Weak sustainability is an idea within environmental economics which states that human capital can substitute natural capital.
+<style scoped>
+.cols {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 2rem;
+  padding-right: 1rem;
+}
+</style>
 
-Strong sustainability as used in ecological economics assumes that human capital and natural capital are complementary, but not interchangeable.
+<div class="cols">
+
+**Weak sustainability** is an idea within environmental economics which states that human capital can substitute natural capital.
+
+**Strong sustainability** as used in ecological economics assumes that human capital and natural capital are complementary, but not interchangeable.
+
+</div>
 
 
 ---
 
 # Dimensions of Sustainability
 
-Two visualisations.
+Two visualisations: Triangle vs. Shell
 
-Shell
-
-Triangle
-
-![height:300px](images/pt01_slide22_img1_1000x560.png) ![height:300px](images/pt01_slide22_img2_700x525.png)
+![height:350px](images_part_01/pt01_slide22_img1_1000x560.png) ![height:350px](images_part_01/pt01_slide22_img2_700x525.png)
 
 
 ---
 
-# Ecological Footprint
+# Ecological Footprint
 
 We should aim for a high human development and low ecological impact.
 
-![width:900px center](images/pt01_slide23_img1_1163x798.jpg)
+![width:700px center](images_part_01/pt01_slide23_img1_1163x798.jpg)
 
 <!-- Notes: An Article from 2015 "Only eight countries meet two key conditions for sustainable development as United Nations adopts Sustainable Development Goals":
  
@@ -227,28 +254,34 @@ Aus <https://www.footprintnetwork.org/2015/09/23/eight-countries-meet-two-key-co
 
 ---
 
-# Sustainable Development Goals
-
-A political framework for Sustainable Development.
-
-
----
-
 # Sustainable Development Goals (SDGs)
 
 17 goals until 2030: universal, indivisible, transformative.
 
-![width:850px center](images/pt01_slide25_img1_726x451.png)
+![width:650px center](images_part_01/pt01_slide25_img1_726x451.png)
 
 
 ---
 
 # The 2030 Agenda
 
-The Sustainable Development Goals (SDGs) are a global agenda, adopted by countries in 2015, with a vision of ending poverty, protecting the planet and ensuring that all people enjoy peace and prosperity. 
-The 17 SDGs and 169 targets are part of what is known as the 2030 Agenda, which recognizes "that eradicating poverty in all its forms and dimensions, including extreme poverty, is the greatest global challenge and an indispensable requirement for sustainable development." In adopting the agenda, countries resolved to take the "bold and transformative steps which are urgently needed to shift the world onto a sustainable and resilient path. As we embark on this collective journey, we pledge that no one will be left behind."
+<style scoped>
+.cols {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 2rem;
+  padding-right: 1rem;
+}
+</style>
+
+<div class="cols">
+
+The Sustainable Development Goals (SDGs) are a global agenda, adopted by countries in 2015, with a vision of ending poverty, protecting the planet and ensuring that all people enjoy peace and prosperity. The 17 SDGs and 169 targets are part of what is known as the 2030 Agenda, which recognizes **"that eradicating poverty in all its forms and dimensions, including extreme poverty, is the greatest global challenge and an indispensable requirement for sustainable development."**
+
+In adopting the agenda, countries resolved to take the **"bold and transformative steps which are urgently needed to shift the world onto a sustainable and resilient path. As we embark on this collective journey, we pledge that no one will be left behind."**
 The goals and targets are universal, meaning they apply to all countries around the world, not just poor countries. Reaching the goals requires action on all fronts – governments, businesses, civil society and people everywhere all have a role to play.
 
+</div>
 
 ---
 
@@ -256,9 +289,9 @@ The goals and targets are universal, meaning they apply to all countries around 
 
 Identifying the major themes of ths 17 goals.
 
-![bg right:50% contain](images/pt01_slide27_img1_1113x844.png)
+![bg right:50% contain](images_part_01/pt01_slide27_img1_1113x844.png)
 
-![width:420px](images/pt01_slide27_img2_600x600.png)
+![width:420px](images_part_01/pt01_slide27_img2_600x600.png)
 
 <!-- Notes: What are the elements underpinning the Sustainable Development Goals? 
 The Goals and targets will stimulate action over the next 15 years in areas of critical importance: people, planet, prosperity, peace and partnership. 
@@ -280,7 +313,7 @@ Partnership - to mobilize the means required to implement this agenda through a 
 
 # SDGs according to the „shell modell“
 
-Source: Jarker/Lokrantz/Azote
+###### Source: Jarker/Lokrantz/Azote
 
-![width:750px center](images/pt01_slide28_img1_885x566.png)
+![width:750px center](images_part_01/pt01_slide28_img1_885x566.png)
 
