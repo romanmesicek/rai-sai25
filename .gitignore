@@ -6,10 +6,13 @@
 *.png
 *.jpg
 *.jpeg
-# BUT allow images in slides/images directory (for presentations)
-!slides/images/*.png
-!slides/images/*.jpg
-!slides/images/*.jpeg
+# BUT allow images in slides image directories (for presentations)
+!slides/images_part_01/*.png
+!slides/images_part_01/*.jpg
+!slides/images_part_01/*.jpeg
+!slides/images_part_02/*.png
+!slides/images_part_02/*.jpg
+!slides/images_part_02/*.jpeg
 # Exclude original/backup images
 slides/images/originals/
 
