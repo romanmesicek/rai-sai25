@@ -24,18 +24,14 @@ The `publications/` directory serves as a repository for:
 
 ## Versioning
 
-Publications follow semantic versioning:
-- **v1.0** - Initial release
-- **v1.1** - Minor updates (typos, formatting, small clarifications)
-- **v2.0** - Major revisions (substantial content changes)
+Publications are version-controlled through Git commits and tags. GitHub maintains the complete version history, making filename version numbers unnecessary.
 
 ## Current Publications
 
 ### RAI-SAI25 Whitepaper
 
-**File:** `RAI-SAI25_Whitepaper_v1.0.md`
-**Version:** 1.0
-**Date:** October 19, 2025
+**File:** `RAI-SAI25_Whitepaper.md`
+**Latest Update:** October 19, 2025
 **Description:** Academic whitepaper describing the GitHub-enabled collaborative learning approach used in the RAI-SAI25 course. Suitable for sharing with academic colleagues and use in course marketing.
 
 **Topics Covered:**
