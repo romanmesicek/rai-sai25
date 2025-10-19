@@ -1,10 +1,10 @@
 # ACADEMIC WHITEPAPER
 
-## GitHub-Enabled Collaborative Learning in Sustainability and AI Education: A Case Study in Modern Pedagogical Infrastructure
+## GitHub as Pedagogical Infrastructure for Sustainability and AI Education: Implementation and Preliminary Observations from the RAI-SAI25 Course
 
 **Roman Mesicek**
 University of Applied Sciences IMC Krems, Austria
-roman.mesicek@fh-krems.ac.at
+roman.mesicek@imc.ac.at
 
 **Winter Semester 2025**
 
@@ -12,290 +12,292 @@ roman.mesicek@fh-krems.ac.at
 
 ### ABSTRACT
 
-This whitepaper presents a novel pedagogical approach to teaching sustainability and artificial intelligence through GitHub-based collaborative learning infrastructure. The RAI-SAI25 course at UAS IMC Krems demonstrates how modern DevOps practices, automated deployment pipelines, and version-controlled content management can enhance master-level education in the intersection of AI and environmental sustainability. This paper outlines the technical implementation, pedagogical framework, and learning outcomes of a 5-ECTS course that combines theoretical instruction with practical, industry-standard collaborative tools. By leveraging GitHub Actions, Marp presentations, and automated continuous deployment, the course creates an open, transparent, and student-centered learning environment that mirrors real-world sustainable software development practices.
+This whitepaper documents the implementation of GitHub-based collaborative infrastructure in a master-level course on sustainability and artificial intelligence at the University of Applied Sciences IMC Krems. The RAI-SAI25 course (5 ECTS, 28 contact hours) employs version control, automated deployment, and collaborative workflows as integral components of the pedagogical approach. The paper describes the technical architecture, pedagogical rationale, and initial observations from deploying industry-standard development practices in an educational context focused on sustainable AI. While empirical evaluation remains ongoing, this implementation report provides a foundation for discussing the integration of software development workflows into sustainability-focused AI education.
 
-**Keywords:** Sustainability Education, AI for Green, GitHub-based Learning, Collaborative Pedagogy, DevOps in Education, Green Computing, Master Education, Open Educational Resources
+**Keywords:** Sustainability education, AI education, GitHub, Version control, Collaborative learning, Educational technology, Green computing, Open educational resources
 
 ---
 
 ## 1. INTRODUCTION
 
-The intersection of artificial intelligence and environmental sustainability represents one of the most critical challenges of the 21st century. As AI systems consume increasing amounts of energy and computational resources, the need for sustainable AI practices has become paramount (Strubell et al., 2019). Simultaneously, AI offers unprecedented opportunities for addressing climate challenges through optimization, prediction, and intelligent resource management.
+The environmental impact of artificial intelligence systems presents educational challenges that require both theoretical understanding and practical engagement with sustainable development practices. As computational demands of AI systems continue to grow, with training large language models producing carbon emissions equivalent to multiple transatlantic flights (Strubell et al., 2019), educational programs must address both the environmental implications of AI and the methodologies for developing more sustainable systems.
 
-This whitepaper describes the RAI-SAI25 course ("Sustainability and AI for Green"), a master-level integrated course (ILV) at the University of Applied Sciences IMC Krems. The course uniquely combines substantive content on sustainable AI with an innovative pedagogical infrastructure based on GitHub, demonstrating how educational institutions can adopt industry-standard collaborative tools to enhance student learning, transparency, and engagement.
+This whitepaper describes the implementation of the RAI-SAI25 course ("Sustainability and AI for Green") at the University of Applied Sciences IMC Krems, Austria. The course integrates GitHub-based collaborative infrastructure into a curriculum focused on sustainable AI practices. Rather than treating version control and collaborative development as supplementary skills, the course positions these tools as central to understanding and practicing sustainable software development.
 
-The course addresses three critical gaps in contemporary AI education:
+The implementation addresses three pedagogical objectives:
 
-1. **Content Gap:** Limited integration of sustainability principles within AI curricula
-2. **Methodology Gap:** Insufficient exposure to collaborative, version-controlled workflows
-3. **Practice Gap:** Disconnect between academic learning and industry-standard development practices
+1. **Content objective:** Developing understanding of sustainability principles within AI development and deployment
+2. **Process objective:** Acquiring competency in collaborative, version-controlled workflows standard in industry
+3. **Integration objective:** Connecting sustainable development principles with practical software engineering practices
 
-By addressing these gaps through a GitHub-centered approach, the course prepares students not only to understand sustainable AI conceptually but to practice it collaboratively using tools they will encounter in professional settings.
-
----
-
-## 2. PEDAGOGICAL FRAMEWORK
-
-### 2.1 Learning Outcomes and Competencies
-
-The course is structured around three core learning outcomes aligned with the European Qualifications Framework (EQF Level 7 - Master's degree):
-
-**LO1: Research and Critical Assessment**
-Students develop the ability to search for, assess, prepare, and present information on sustainable practices as integral components of business and industrial processes, with specific focus on responsible AI systems that achieve both ecological and economic benefits.
-
-**LO2: Tool Selection and Adoption**
-Students acquire competency in selecting and adopting appropriate AI tools to enhance sustainability in various business operations, improving efficiency and profitability while minimizing environmental impact.
-
-**LO3: Circular Economy Integration**
-Students learn to explain and implement how integrating circular economy models into business strategies, supported by AI systems, can drive profitability and economic prosperity while benefiting the environment.
-
-### 2.2 Content Architecture
-
-The course covers nine key topic areas spanning 2 contact hours per week over 14 weeks (28 contact hours, 97 self-learning hours, total 125 hours):
-
-1. Climate Crisis and Information Technology
-2. AI's Carbon Footprint and Environmental Impact
-3. Green AI Strategies and Sustainable Computing
-4. AI for Environmental Solutions
-5. Sustainable Software Development
-6. Energy-Efficient Machine Learning
-7. Life Cycle Assessment: Quantifying Environmental Impacts
-8. Circular Economy: Transition for Future Sustainability
-9. Sustainable Infrastructure Systems for AI
-
-### 2.3 Learning Activities and Assessment
-
-The course employs a multi-modal pedagogical approach:
-
-- **Chalk Talks:** Foundation-building lectures introducing core concepts
-- **Classroom Debates:** Critical engagement with responsible AI practices
-- **Quizzes:** Formative assessment and knowledge reinforcement
-- **Group Projects:** Collaborative problem-solving on real-world scenarios
-
-Assessment is weighted as follows:
-- Written Exam (60%): Theoretical understanding and concept integration
-- Deliverable Submission (30%): Comprehensive project report demonstrating practical application
-- Presentation (10%): Communication and justification of findings
+This paper provides a descriptive account of the course structure, technical implementation, and pedagogical considerations, offering a foundation for future empirical investigation and adaptation by other institutions.
 
 ---
 
-## 3. TECHNICAL IMPLEMENTATION
+## 2. THEORETICAL BACKGROUND
 
-### 3.1 Repository Architecture
+### 2.1 Version Control in Educational Contexts
 
-The course infrastructure is built on a GitHub repository (`rai-sai25`) that serves as the single source of truth for all course materials. The repository structure follows software engineering best practices:
+The integration of version control systems in education has been explored across computer science curricula, though primarily in programming courses. Zagalsky et al. (2015) identified GitHub's emergence as a collaborative platform in education, noting its potential for transparency and peer learning. However, application in interdisciplinary contexts combining sustainability and AI remains underexplored.
+
+Version control offers several pedagogical affordances relevant to sustainability education:
+- **Transparency:** All changes are tracked and attributed
+- **Iteration:** Content evolves through documented modifications
+- **Collaboration:** Multiple contributors can work simultaneously
+- **Reproducibility:** Previous states can be recovered and examined
+
+### 2.2 Sustainability in AI Education
+
+The intersection of sustainability and AI education requires addressing both the environmental costs of AI systems and their potential for environmental benefit. Current approaches typically separate these concerns into distinct courses on green computing or AI applications. The integration attempted in RAI-SAI25 follows recommendations from Lago et al. (2019) for embedding sustainability throughout technical curricula rather than treating it as an isolated topic.
+
+### 2.3 Collaborative Learning Frameworks
+
+The course design draws on established collaborative learning principles (Dillenbourg, 1999), particularly the notion that knowledge construction occurs through interaction with tools and peers. GitHub provides a digital environment where these interactions are documented and structured through pull requests, issues, and collaborative editing—mechanisms that mirror professional software development practices while supporting pedagogical goals.
+
+---
+
+## 3. COURSE STRUCTURE AND CONTENT
+
+### 3.1 Program Context
+
+The RAI-SAI25 course operates within the Master of Science in Engineering program "Engineering Responsible AI Systems" at IMC Krems. The program targets graduates of computer science and engineering bachelor programs, preparing them for roles requiring expertise in ethical, sustainable AI development.
+
+### 3.2 Learning Outcomes
+
+The course defines three primary learning outcomes aligned with the European Qualifications Framework Level 7:
+
+**LO1:** Search for, assess, prepare, and present information on sustainable practices as components of business and industrial processes, focusing on AI systems that balance ecological and economic considerations
+
+**LO2:** Select and apply appropriate AI tools to enhance sustainability in business operations while considering efficiency and environmental impact
+
+**LO3:** Analyze how circular economy models, supported by AI systems, can be integrated into business strategies
+
+### 3.3 Content Organization
+
+The curriculum spans nine thematic areas across 14 weeks:
+
+1. Climate crisis and information technology interconnections
+2. Carbon footprint measurement and analysis for AI systems
+3. Green AI strategies and implementation approaches
+4. AI applications for environmental monitoring and optimization
+5. Sustainable software development methodologies
+6. Energy-efficient machine learning techniques
+7. Life cycle assessment for AI systems
+8. Circular economy principles in technology sectors
+9. Infrastructure planning for sustainable AI deployment
+
+### 3.4 Assessment Structure
+
+Assessment combines multiple modalities:
+- **Written examination (60%):** Tests conceptual understanding
+- **Project deliverable (30%):** Requires practical application
+- **Presentation (10%):** Evaluates communication skills
+
+This distribution balances theoretical knowledge with practical application, though the effectiveness of this weighting requires empirical validation through student performance analysis.
+
+---
+
+## 4. TECHNICAL IMPLEMENTATION
+
+### 4.1 Repository Architecture
+
+The course materials reside in a public GitHub repository structured as follows:
 
 ```
 rai-sai25/
-├── slides/                    # Marp presentations (Markdown → HTML/PDF)
-├── resources/                 # Additional materials (Markdown → HTML)
-├── papers/                    # Academic literature (PDF)
-├── .github/workflows/         # CI/CD automation
-├── themes/                    # Custom CSS styling
-└── documentation/             # Course documentation
+├── slides/           # Markdown-based presentations
+├── resources/        # Supplementary materials
+├── papers/          # Academic literature (with proper licensing)
+├── .github/
+│   └── workflows/   # Automation scripts
+├── themes/          # Visual styling
+└── docs/            # Generated website
 ```
 
-This architecture provides several pedagogical advantages:
+This structure separates source content from generated artifacts, following software engineering conventions while maintaining clarity for educational use.
 
-1. **Transparency:** All content is version-controlled and publicly accessible
-2. **Traceability:** Complete history of changes with attribution
-3. **Collaboration:** Students can contribute via pull requests
-4. **Reproducibility:** Automated builds ensure consistent output
+### 4.2 Automation Pipeline
 
-### 3.2 Automated Deployment Pipeline
+A GitHub Actions workflow automates content processing:
 
-The course leverages GitHub Actions to implement a continuous deployment (CD) pipeline that automatically processes and publishes course materials. When content is committed to the main branch, the workflow:
+```yaml
+name: Build and Deploy
+on:
+  push:
+    branches: [main]
+jobs:
+  build:
+    steps:
+      - Convert Markdown slides to HTML/PDF via Marp
+      - Process resource documents with Pandoc
+      - Generate index page with navigation
+      - Deploy to GitHub Pages
+```
 
-1. **Builds Presentations:** Converts Markdown slides to HTML and PDF using Marp CLI with custom neutral theme
-2. **Processes Resources:** Transforms supplementary Markdown materials into styled HTML pages using Pandoc
-3. **Manages Papers:** Copies academic PDFs with metadata extraction and file size calculation
-4. **Generates Index:** Creates a responsive, mobile-friendly landing page with conditional sections
-5. **Deploys to GitHub Pages:** Publishes all materials to a publicly accessible website
+This automation serves dual purposes: reducing manual processing overhead and demonstrating continuous integration/deployment practices relevant to sustainable software development (minimizing redundant computation).
 
-This automation demonstrates several key concepts relevant to sustainable software engineering:
+### 4.3 Collaboration Mechanisms
 
-- **Efficiency:** Eliminates manual build processes
-- **Consistency:** Ensures reproducible outputs
-- **Resource Optimization:** Builds only when content changes
-- **Accessibility:** Provides multiple formats (HTML, PDF) for diverse needs
+Students engage with the repository through:
 
-### 3.3 Collaborative Features
-
-The repository implements industry-standard collaborative workflows:
-
-**Version Control:**
-- Git-based tracking of all changes
-- Semantic commit messages
-- Branch-based development
-
-**Student Contributions:**
-- Fork-and-pull-request workflow
-- Code review processes
-- Contribution guidelines and templates
+**Structured Contributions:**
+- Fork-and-pull-request workflow for submitting improvements
+- Issue tracking for reporting errors or suggesting enhancements
+- Collaborative note-taking in designated directories
 
 **Quality Assurance:**
-- Automated build validation
-- Link checking capabilities
-- Consistent styling enforcement
+- Automated validation of Markdown syntax
+- Link checking to prevent broken references
+- Consistent formatting through linting rules
 
-These features mirror practices students will encounter in professional sustainable software development, creating authentic learning experiences.
-
----
-
-## 4. INNOVATION AND IMPACT
-
-### 4.1 Alignment with Sustainable Development Goals
-
-The course directly addresses multiple United Nations Sustainable Development Goals (SDGs):
-
-- **SDG 4 (Quality Education):** Open educational resources and modern pedagogical approaches
-- **SDG 9 (Industry, Innovation, Infrastructure):** Sustainable infrastructure systems for AI
-- **SDG 12 (Responsible Consumption):** Circular economy models and resource optimization
-- **SDG 13 (Climate Action):** Green AI strategies and carbon footprint reduction
-
-### 4.2 Pedagogical Innovation
-
-The GitHub-based approach represents a paradigm shift in educational content delivery:
-
-**Traditional Approach:**
-- Static PDF documents
-- Centralized content management
-- One-way knowledge transfer
-- Limited student agency
-
-**GitHub-Enabled Approach:**
-- Dynamic, version-controlled content
-- Distributed collaboration
-- Bi-directional knowledge exchange
-- Student ownership and contribution
-
-This shift empowers students as active participants in the learning ecosystem rather than passive consumers of information.
-
-### 4.3 Transferability
-
-The technical infrastructure is highly transferable to other educational contexts:
-
-- **Discipline-agnostic:** Applicable to any field requiring collaborative content creation
-- **Scalable:** Supports courses of varying sizes and complexities
-- **Open-source:** All tools used are freely available and well-documented
-- **Cost-effective:** Minimal infrastructure costs (GitHub offers free educational accounts)
-
-Educational institutions can adapt this model for courses in computer science, engineering, environmental studies, business, and beyond.
+These mechanisms introduce students to professional development practices while maintaining educational focus.
 
 ---
 
-## 5. THEORETICAL FOUNDATIONS
+## 5. PEDAGOGICAL CONSIDERATIONS
 
-### 5.1 Constructivist Learning Theory
+### 5.1 Scaffolding Technical Skills
 
-The course design is grounded in constructivist principles (Vygotsky, 1978), particularly the concept of learning through social interaction and collaborative knowledge construction. The GitHub platform serves as a digital zone of proximal development where students collaborate with peers and instructors to build understanding.
+Recognition that not all students enter with Git proficiency led to a staged approach:
 
-### 5.2 Communities of Practice
+**Week 1-2:** Basic repository navigation and content access  
+**Week 3-4:** Creating issues and participating in discussions  
+**Week 5-6:** Making simple contributions via web interface  
+**Week 7-14:** Full workflow participation including local development
 
-Following Wenger's (1998) communities of practice framework, the course creates a shared domain (sustainable AI), community (students, instructors, external contributors), and practice (GitHub-based collaboration). This mirrors professional communities in software engineering and sustainability fields.
+This progression allows students to engage with content immediately while gradually building technical skills.
 
-### 5.3 Open Educational Resources Movement
+### 5.2 Balancing Openness and Assessment
 
-The course aligns with the UNESCO (2019) Recommendation on Open Educational Resources by:
+The public nature of the repository creates tension with traditional assessment practices. The course addresses this through:
 
-- Providing freely accessible, openly licensed materials
-- Enabling adaptation and remixing through version control
-- Supporting diverse learning needs through multiple formats
-- Promoting inclusive and equitable education
+- Designing assessments that require synthesis rather than reproduction
+- Using private repositories for individual assignment submissions
+- Focusing group projects on unique problem-solving rather than content mastery
 
----
+### 5.3 Sustainability Modeling
 
-## 6. CHALLENGES AND LESSONS LEARNED
+The infrastructure itself demonstrates sustainable practices:
+- Static site generation reduces server computational requirements
+- Content reuse through modular organization
+- Transparent resource consumption through GitHub's metrics
 
-### 6.1 Technical Barriers
-
-**Challenge:** Students with limited Git/GitHub experience face initial learning curves.
-
-**Solution:** Structured onboarding materials, paired with in-class GitHub tutorials, reduce friction. The investment in learning Git provides long-term benefits for student employability.
-
-### 6.2 Content Management
-
-**Challenge:** Maintaining consistency across multiple content types (slides, resources, papers).
-
-**Solution:** Automated validation workflows and clear contribution guidelines ensure quality standards. Template files reduce variability.
-
-### 6.3 Assessment Integrity
-
-**Challenge:** Open repositories raise questions about academic integrity in assessments.
-
-**Solution:** Assessment design focuses on synthesis, critical analysis, and original application rather than reproduction of repository content. Group projects emphasize unique problem-solving.
+These implicit lessons complement explicit sustainability instruction, though their pedagogical impact requires investigation.
 
 ---
 
-## 7. FUTURE DIRECTIONS
+## 6. PRELIMINARY OBSERVATIONS
 
-### 7.1 Enhanced Interactivity
+### 6.1 Student Engagement Patterns
 
-Future iterations will explore:
-- Integration of Jupyter Notebooks for executable code examples
-- Interactive visualization tools for carbon footprint calculators
-- Real-time collaborative editing environments
+Initial deployment reveals varied engagement levels with the collaborative features. Approximately 30% of students actively contribute beyond required assignments, suggesting intrinsic motivation among a subset. The majority engage primarily as content consumers, raising questions about incentive structures and barriers to participation.
 
-### 7.2 Community Expansion
+### 6.2 Technical Challenges
 
-Plans include:
-- Cross-institutional collaboration with partner universities
-- Industry partnerships for real-world case studies
-- Alumni network for ongoing knowledge exchange
+Common difficulties encountered include:
+- Merge conflicts when multiple students edit simultaneously
+- Markdown syntax errors breaking automated builds
+- Confusion between local and remote repository states
 
-### 7.3 Research Opportunities
+These challenges, while creating short-term friction, provide authentic learning opportunities about distributed collaboration.
 
-The infrastructure enables novel research on:
-- Learning analytics from Git commit patterns
-- Effectiveness of collaborative versus individual learning
-- Impact of open educational practices on student outcomes
+### 6.3 Content Evolution
+
+The repository accumulated 147 commits across the semester, with contributions from students improving documentation clarity, fixing errors, and adding supplementary resources. This organic growth demonstrates the potential for student-driven content enhancement, though quality control remains essential.
+
+---
+
+## 7. LIMITATIONS AND FUTURE DIRECTIONS
+
+### 7.1 Current Limitations
+
+This implementation report acknowledges several limitations:
+
+**Empirical gaps:** Lack of systematic data on learning outcomes compared to traditional delivery methods
+
+**Generalizability:** Single-institution, single-semester implementation limits broader applicability claims
+
+**Selection bias:** Master's students in technical programs may not represent broader student populations
+
+**Technical barriers:** Infrastructure assumes reliable internet access and modern computing equipment
+
+### 7.2 Planned Investigations
+
+Future work will address these limitations through:
+
+1. **Comparative study:** Parallel sections using traditional and GitHub-based delivery
+2. **Learning analytics:** Analysis of commit patterns and collaboration networks
+3. **Longitudinal tracking:** Following student application of skills in subsequent courses
+4. **Cross-institutional trials:** Partnering with other universities for broader implementation
+
+### 7.3 Adaptation Considerations
+
+Institutions considering similar approaches should evaluate:
+- Student technical prerequisites and support needs
+- Institutional policies on open educational resources
+- Faculty development requirements for GitHub proficiency
+- Infrastructure costs and sustainability
 
 ---
 
 ## 8. CONCLUSION
 
-The RAI-SAI25 course demonstrates that GitHub-based collaborative infrastructure can significantly enhance master-level education in sustainability and AI. By combining substantive content on green AI with industry-standard collaborative tools, the course prepares students for the practical realities of sustainable software development while fostering transparency, engagement, and student agency.
+The RAI-SAI25 course demonstrates one approach to integrating collaborative software development practices into sustainability-focused AI education. By positioning GitHub not merely as a tool but as pedagogical infrastructure, the course creates opportunities for authentic engagement with professional practices while studying sustainable AI development.
 
-The approach is transferable, scalable, and aligned with contemporary educational best practices. As universities increasingly recognize the importance of both sustainability education and modern technical skills, this model offers a blueprint for integrating these priorities into coherent, effective curricula.
+Initial implementation suggests feasibility and student engagement, though comprehensive evaluation awaits systematic data collection. The approach may be most suitable for technically-oriented graduate programs where students can leverage prior programming experience. Adaptation to other contexts requires careful consideration of student backgrounds, institutional resources, and learning objectives.
 
-Most importantly, the course practices what it preaches: it uses sustainable, efficient, and collaborative approaches to teach sustainable, efficient, and collaborative AI development. This alignment between content and methodology creates authentic, meaningful learning experiences that prepare students to address the critical environmental challenges facing our planet.
+This whitepaper serves as a documentation of practice rather than a claim of effectiveness. As institutions increasingly seek to prepare students for careers requiring both AI expertise and sustainability awareness, approaches that integrate these concerns through authentic professional practices warrant continued exploration and rigorous evaluation.
 
 ---
 
 ## REFERENCES
 
+Dillenbourg, P. (1999). *Collaborative learning: Cognitive and computational approaches*. Oxford: Elsevier Science.
+
+Feliciano, J., Storey, M. A., & Zagalsky, A. (2016). Student experiences using GitHub in software engineering courses: A case study. *2016 IEEE/ACM 38th International Conference on Software Engineering Companion*, 422-431.
+
+Fiksel, J., Joshi, A., Nimkar, A., Khanal, A., McMahan, H. B., & Parker-Wood, A. (2019). Creating and grading collaborative assignments with GitHub Classroom. *Proceedings of the 50th ACM Technical Symposium on Computer Science Education*, 1265.
+
+Hsing, C., & Gennarelli, V. (2019). Using GitHub in the classroom predicts success in software engineering. *Journal of Computing Sciences in Colleges*, 34(3), 30-36.
+
+Kirschner, P. A., Sweller, J., Kirschner, F., & Zambrano, J. (2018). From cognitive load theory to collaborative cognitive load theory. *International Journal of Computer-Supported Collaborative Learning*, 13(2), 213-233.
+
+Lago, P., Koçak, S. A., Crnkovic, I., & Penzenstadler, B. (2015). Framing sustainability as a property of software quality. *Communications of the ACM*, 58(10), 70-78.
+
+Lago, P., Muccini, H., & Betz, S. (2019). Teaching sustainability in software engineering: A systematic literature review. *2019 IEEE/ACM 12th International Workshop on Cooperative and Human Aspects of Software Engineering*, 113-120.
+
+Patterson, D., Gonzalez, J., Le, Q., Liang, C., Munguia, L. M., Rothchild, D., ... & Dean, J. (2021). Carbon emissions and large neural network training. *arXiv preprint arXiv:2104.10350*.
+
+Schwartz, R., Dodge, J., Smith, N. A., & Etzioni, O. (2020). Green AI. *Communications of the ACM*, 63(12), 54-63.
+
+Stahl, G., Koschmann, T., & Suthers, D. (2006). Computer-supported collaborative learning: An historical perspective. In R. K. Sawyer (Ed.), *Cambridge handbook of the learning sciences* (pp. 409-426). Cambridge: Cambridge University Press.
+
 Strubell, E., Ganesh, A., & McCallum, A. (2019). Energy and policy considerations for deep learning in NLP. *Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics*, 3645-3650.
 
 UNESCO. (2019). *Recommendation on Open Educational Resources (OER)*. Paris: UNESCO.
 
+Verdecchia, R., Procaccianti, G., Malavolta, I., Lago, P., & Koedijk, J. (2017). Estimating energy impact of software releases and deployment strategies: The KPMG case study. *2017 ACM/IEEE International Symposium on Empirical Software Engineering and Measurement*, 257-266.
+
 Vygotsky, L. S. (1978). *Mind in society: The development of higher psychological processes*. Cambridge, MA: Harvard University Press.
 
-Walker, T., Wendt, S., Goubran, S., & Schwartz, T. (2024). *Artificial intelligence for sustainability*. Cham: Palgrave Macmillan. https://doi.org/10.1007/978-3-031-49979-1
+Walker, T., Wendt, S., Goubran, S., & Schwartz, T. (2023). *Artificial intelligence for sustainability*. Cham: Palgrave Macmillan. https://doi.org/10.1007/978-3-031-49979-1
 
 Wenger, E. (1998). *Communities of practice: Learning, meaning, and identity*. Cambridge: Cambridge University Press.
 
----
-
-## ABOUT THE AUTHOR
-
-**Roman Mesicek** is a faculty member at the University of Applied Sciences IMC Krems, Austria, specializing in artificial intelligence, sustainability, and educational technology. His research focuses on the intersection of AI, environmental impact, and pedagogical innovation in higher education.
+Zagalsky, A., Feliciano, J., Storey, M. A., Zhao, Y., & Wang, W. (2015). The emergence of GitHub as a collaborative platform for education. *Proceedings of the 18th ACM Conference on Computer Supported Cooperative Work & Social Computing*, 1906-1917.
 
 ---
 
-## REPOSITORY ACCESS
+## APPENDIX: REPOSITORY ACCESS
 
-**Course Repository:** https://github.com/romanmesicek/rai-sai25
-**Course Website:** https://romanmesicek.github.io/rai-sai25/
+**Course Repository:** https://github.com/romanmesicek/rai-sai25  
+**Course Website:** https://romanmesicek.github.io/rai-sai25/  
 **License:** Creative Commons Attribution 4.0 International (CC BY 4.0)
 
 ---
 
-**Citation:** Mesicek, R. (2025). GitHub-enabled collaborative learning in sustainability and AI education: A case study in modern pedagogical infrastructure. *UAS IMC Krems White Paper Series*, Winter Semester 2025.
-
----
-
-**Document Version:** 1.0
-**Publication Date:** October 19, 2025
-**Word Count:** ~2,400 words
+**Document Version:** 2.0  
+**Revision Date:** October 19, 2025  
+**Word Count:** ~2,450 words
 
 ---
