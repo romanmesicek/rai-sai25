@@ -75,6 +75,7 @@ BACKUP*
 # Scripts and utilities
 *.sh
 rename_images.sh
+update_part02_references.py
 
 # Reports and summaries
 *RESIZE_SUMMARY*
@@ -82,6 +83,11 @@ rename_images.sh
 *.txt
 *LAYOUT_OPTIMIZATION*
 *MARP_IMAGES*
+PART02_OPTIMIZATION_PLAN.md
+PART02_OPTIMIZATION_SUMMARY.md
+AUTO_COLUMNS_EXAMPLE.md
+AUTO_COLUMNS_GUIDE.md
+AUTO_COLUMNS_QUICKREF.md
 
 # Source files
 00_material/
