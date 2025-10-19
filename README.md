@@ -89,21 +89,7 @@ Students are encouraged to contribute to this repository through:
 
 - **Research Summaries**: Analysis of recent papers on Green AI
 - **Case Studies**: Real-world examples of sustainable AI implementations
-- **Code Examples**: Implementations of energy-efficient algorithms
 - **Discussion Notes**: Insights from class discussions and debates
-
-### Contribution Guidelines
-
-1. **Fork** this repository
-2. **Create** a feature branch for your contribution
-3. **Add** your materials in the appropriate directory
-4. **Submit** a pull request with a clear description
-5. **Follow** the established naming conventions and file structure
-
-### File Naming Convention
-- Use descriptive names: `week01_climate_crisis_summary.md`
-- Include your initials: `student_initials_topic_date.md`
-- Use lowercase with underscores: `green_ai_case_study_2025.md`
 
 ## 🤝 Contributing
 
