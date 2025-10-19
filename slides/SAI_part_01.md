@@ -39,11 +39,11 @@ Structuring based on a selection of thematic areas from the Doughnut Economics c
 
 ###### Steffen, W., Crutzen, P. J., & McNeill, J. R. (2016). The Anthropocene: Are humans now overwhelming the great forces of nature?. In The New World History (pp. 440-459). University of California Press.
 
-![width:700px center](images_part_01/pt01_slide05_img3_1206x240.png)
-![bg](images_part_01/pt01_slide05_img1_692x745.jpg)
-![bg](images_part_01/pt01_slide05_img2_558x694.jpg)
-![bg](images_part_01/pt01_slide05_img4_400x300.jpg)
-![bg](images_part_01/pt01_slide05_img5_800x533.jpg)
+![width:700px center](images/pt01_slide05_img3_1206x240.png)
+![bg](images/pt01_slide05_img1_692x745.jpg)
+![bg](images/pt01_slide05_img2_558x694.jpg)
+![bg](images/pt01_slide05_img4_400x300.jpg)
+![bg](images/pt01_slide05_img5_800x533.jpg)
 
 
 ---
@@ -52,14 +52,14 @@ Structuring based on a selection of thematic areas from the Doughnut Economics c
 
 An [Introduction by Johan Rockström (TED Talk, 2010)](https://www.youtube.com/watch?v=RgqtrlixYR4) on the state of the world.
 
-![height:100px](images_part_01/pt01_slide06_img2_800x600.jpg)
-![bg right:74% 105%](images_part_01/pt01_slide06_img1_1040x776.png)
+![height:100px](images/pt01_slide06_img2_800x600.jpg)
+![bg right:74% 105%](images/pt01_slide06_img1_1040x776.png)
 
 ---
 
 # Pathways of the earth system
 
-![Pathways](images_part_01/1_Planetary-Boundaries_website_img_1_708x452.png)
+![Pathways](images/1_Planetary-Boundaries_website_img_1_708x452.png)
 
 ###### Steffen, W., Rockström, J., Richardson, K., Lenton, T. M., Folke, C., Liverman, D., ... & Schellnhuber, H. J. (2018). Trajectories of the Earth System in the Anthropocene. Proceedings of the National Academy of Sciences, 115(33), 8252-8259.
 
@@ -71,7 +71,7 @@ An [Introduction by Johan Rockström (TED Talk, 2010)](https://www.youtube.com/w
 
 
 
-![height:380px](images_part_01/PB-over-time-v3_2_1920x627.png)
+![height:380px](images/PB-over-time-v3_2_1920x627.png)
 
 Defining a safe operating space for humanity.
 
@@ -85,7 +85,7 @@ Defining a safe operating space for humanity.
 
 **The ecological ceiling** – beyond which lies critical planetary degradation
 
-![bg left 90%](images_part_01/pt01_slide13_img1_680x680.png)
+![bg left 90%](images/pt01_slide13_img1_680x680.png)
 
 ###### Raworth, K. (2018). Doughnut economics: Seven ways to think like a 21st century economist. Chelsea Green Publishing.
 
@@ -118,7 +118,7 @@ The outer ring of the Doughnut, **the Ecological Ceiling**, sets a boundary for 
 
 **Humanity is currently living far outside the Doughnut**, on both sides - social and ecological - as all of the red wedges show. Billions of people still cannot meet their most essential needs while humanity has already collectively overshot multiple planetary boundaries.
 
-![bg right 90%](images_part_01/pt01_slide10_img2_1080x1079.png)
+![bg right 90%](images/pt01_slide10_img2_1080x1079.png)
 
 ###### Fanning, A. L., & Raworth, K. (2025). Doughnut of social and planetary boundaries monitors a world out of balance. Nature, 646(8083), 47-56.
 
@@ -142,7 +142,7 @@ Connecting the dots: joint discussion and looking at the interlinkages of the to
 
 # Links between social, ecological and economic issues explored
 
-![width:600px](images_part_01/pt01_slide15_img1_961x505.png)
+![width:600px](images/pt01_slide15_img1_961x505.png)
 
 An interesting take on the connections between the issues by [Hans Rosling (TED Talk, 2010)](https://www.youtube.com/watch?v=fTznEIZRkLg) .
 
@@ -171,8 +171,8 @@ Looking at standard dictionary definitions of ‘sustainable’ or ‘sustainabi
 
 His book Sylvicultura oeconomica, oder **haußwirthliche Nachricht und Naturmäßige Anweisung zur wilden Baum-Zucht** (1713) was the first comprehensive treatise about forestry. He is considered to be the father of sustainable yield forestry.
 
-![bg right:33%](images_part_01/pt01_slide18_img1_200x250.png)
-![bg](images_part_01/pt01_slide18_img2_498x810.png)
+![bg right:33%](images/pt01_slide18_img1_200x250.png)
+![bg](images/pt01_slide18_img2_498x810.png)
 
 
 ---
@@ -183,7 +183,7 @@ The first time the term ‘sustainable’ was used “in the modern sense” was
 
 *"We are searching for a model output that represents a world system that is: sustainable without sudden and uncontrolled collapse; and capable of satisfying the basic material requirements of all of its people.”*
 
-![bg right:38% fit](images_part_01/pt01_slide19_img1_182x276.png)
+![bg right:38% fit](images/pt01_slide19_img1_182x276.png)
 
 
 ---
@@ -195,7 +195,7 @@ United Nations Report (1987)
 
 It contains two key concepts: the concept of needs, in particular the essential needs of the world's poor, to which overriding priority should be given; And the idea of limitations imposed by the state of technology and social organization on the environment's ability to meet present and future needs."
 
-![bg right:30% contain](images_part_01/pt01_slide20_img1_704x396.png)
+![bg right:30% contain](images/pt01_slide20_img1_704x396.png)
 
 ###### Gro Harlem Brundtland
 
@@ -233,7 +233,7 @@ Two different schools of economics.
 
 Two visualisations: Triangle vs. Shell
 
-![height:350px](images_part_01/pt01_slide22_img1_1000x560.png) ![height:350px](images_part_01/pt01_slide22_img2_700x525.png)
+![height:350px](images/pt01_slide22_img1_1000x560.png) ![height:350px](images/pt01_slide22_img2_700x525.png)
 
 
 ---
@@ -242,7 +242,7 @@ Two visualisations: Triangle vs. Shell
 
 We should aim for a high human development and low ecological impact.
 
-![width:700px center](images_part_01/pt01_slide23_img1_1163x798.jpg)
+![width:700px center](images/pt01_slide23_img1_1163x798.jpg)
 
 <!-- Notes: An Article from 2015 "Only eight countries meet two key conditions for sustainable development as United Nations adopts Sustainable Development Goals":
  
@@ -258,7 +258,7 @@ Aus <https://www.footprintnetwork.org/2015/09/23/eight-countries-meet-two-key-co
 
 17 goals until 2030: universal, indivisible, transformative.
 
-![width:650px center](images_part_01/pt01_slide25_img1_726x451.png)
+![width:650px center](images/pt01_slide25_img1_726x451.png)
 
 
 ---
@@ -289,9 +289,9 @@ The goals and targets are universal, meaning they apply to all countries around 
 
 Identifying the major themes of ths 17 goals.
 
-![bg right:50% contain](images_part_01/pt01_slide27_img1_1113x844.png)
+![bg right:50% contain](images/pt01_slide27_img1_1113x844.png)
 
-![width:420px](images_part_01/pt01_slide27_img2_600x600.png)
+![width:420px](images/pt01_slide27_img2_600x600.png)
 
 <!-- Notes: What are the elements underpinning the Sustainable Development Goals? 
 The Goals and targets will stimulate action over the next 15 years in areas of critical importance: people, planet, prosperity, peace and partnership. 
@@ -315,5 +315,5 @@ Partnership - to mobilize the means required to implement this agenda through a 
 
 ###### Source: Jarker/Lokrantz/Azote
 
-![width:750px center](images_part_01/pt01_slide28_img1_885x566.png)
+![width:750px center](images/pt01_slide28_img1_885x566.png)
 
