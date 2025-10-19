@@ -16,6 +16,15 @@ This course explores the intersection of artificial intelligence and environment
 - Sustainable Software Development
 - Energy-Efficient Machine Learning
 
+## 🌐 Course Website
+
+All materials are automatically deployed to GitHub Pages:
+- **📊 Slides** - HTML and PDF presentations
+- **🔗 Resources** - Additional materials and links
+- **📚 Papers** - Downloadable academic literature
+
+**Visit: [https://romanmesicek.github.io/rai-sai25/](https://romanmesicek.github.io/rai-sai25/)**
+
 ## 📁 Repository Structure
 
 ```
@@ -37,15 +46,6 @@ rai-sai25/
 ├── SAI_Syllabus.md        # Complete course syllabus
 └── DEPLOYMENT_GUIDE.md    # Deployment documentation
 ```
-
-## 🌐 Course Website
-
-All materials are automatically deployed to GitHub Pages:
-- **📊 Slides** - HTML and PDF presentations
-- **🔗 Resources** - Additional materials and links
-- **📚 Papers** - Downloadable academic literature
-
-Visit: [https://romanmesicek.github.io/rai-sai25/](https://romanmesicek.github.io/rai-sai25/)
 
 ## 🚀 Quick Start
 
