@@ -59,7 +59,7 @@ An [Introduction by Johan Rockström (TED Talk, 2010)](https://www.youtube.com/w
 
 # Pathways of the earth system
 
-![Pathways](images/1_Planetary-Boundaries_website_img_1_708x452.png)
+![Pathways](images/pt01_1_Planetary-Boundaries_website_img_1_708x452.png)
 
 ###### Steffen, W., Rockström, J., Richardson, K., Lenton, T. M., Folke, C., Liverman, D., ... & Schellnhuber, H. J. (2018). Trajectories of the Earth System in the Anthropocene. Proceedings of the National Academy of Sciences, 115(33), 8252-8259.
 
@@ -71,7 +71,7 @@ An [Introduction by Johan Rockström (TED Talk, 2010)](https://www.youtube.com/w
 
 
 
-![height:380px](images/PB-over-time-v3_2_1920x627.png)
+![height:380px](images/pt01_PB-over-time-v3_2_1920x627.png)
 
 Defining a safe operating space for humanity.
 
