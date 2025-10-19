@@ -97,8 +97,7 @@ The prepared repository organizes content to reflect the sustainability-focused 
 rai-sai25/
 ├── slides/                   # Marp presentation slides
 │   ├── *.md                 # Markdown-based presentations
-│   ├── images_part_01/      # Images for part 1 presentations
-│   ├── images_part_02/      # Images for part 2 presentations
+│   ├── images/              # Images for presentations
 │   └── themes/              # Custom Marp themes
 │       └── neutral.css      # Neutral presentation theme
 ├── resources/               # Additional course materials
