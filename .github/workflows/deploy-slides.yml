@@ -464,8 +464,27 @@ jobs:
                   <div class="slides">
           EOF
 
-            # Add all presentations to index with descriptions
+            # Create temporary file to store files with their order numbers
+            temp_slides=$(mktemp)
+
+            # Extract order from each slide file
             for file in slides/*.md; do
+              if [ -f "$file" ]; then
+                # Extract order number from frontmatter (look for "order: N")
+                order=$(grep -m 1 "^order:" "$file" | sed 's/order:[[:space:]]*//' | tr -d '\r')
+
+                # If no order found, use 999 (puts unordered slides at the end)
+                if [ -z "$order" ]; then
+                  order=999
+                fi
+
+                # Store as "order|filepath" for sorting
+                echo "${order}|${file}" >> "$temp_slides"
+              fi
+            done
+
+            # Sort by order number and iterate through slides
+            sort -t'|' -k1 -n "$temp_slides" | while IFS='|' read -r order file; do
               if [ -f "$file" ]; then
                 name=$(basename "$file" .md)
 
@@ -495,6 +514,9 @@ jobs:
                 fi
               fi
             done
+
+            # Clean up temp file
+            rm -f "$temp_slides"
 
             cat >> dist/index.html << 'EOF'
                   </div>

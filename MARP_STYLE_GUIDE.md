@@ -13,6 +13,7 @@ Every presentation file must start with the following YAML frontmatter:
 marp: true
 theme: neutral
 size: 16:9
+order: 1
 ---
 ```
 
@@ -20,6 +21,7 @@ size: 16:9
 - `marp: true` - Enables Marp processing
 - `theme: neutral` - Uses the custom neutral theme (defined in [slides/themes/neutral.css](slides/themes/neutral.css))
 - `size: 16:9` - Sets aspect ratio to widescreen 16:9
+- `order: N` - Numeric value that controls display order on the index page (lower numbers appear first)
 
 **Description Comment (Required for Index Page):**
 Immediately after frontmatter, add a description comment:
@@ -30,8 +32,17 @@ Immediately after frontmatter, add a description comment:
 
 Example:
 ```markdown
+---
+marp: true
+theme: neutral
+size: 16:9
+order: 2
+---
+
 <!-- description: Global Sustainability Challenges -->
 ```
+
+**Note:** The `order` field determines the presentation's position on the index page. Use sequential numbers (1, 2, 3...) or leave gaps (10, 20, 30...) for easy insertion of new slides later. Presentations without an `order` field will appear at the end.
 
 ---
 
