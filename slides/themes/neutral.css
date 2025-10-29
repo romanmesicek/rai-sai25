@@ -119,3 +119,116 @@ section.groupwork::before {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+
+/* Chapter/divider slide - subtle gray background with centered text */
+section.chapter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #eeeeee;
+  padding: 100px 60px;
+}
+
+section.chapter h1 {
+  font-size: 64px;
+  font-weight: 400;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+section.chapter h2 {
+  font-size: 42px;
+  font-weight: 300;
+  color: #000000;
+  margin: 0;
+}
+
+/* Pagination (slide numbers) - small in upper right corner */
+section::after {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 0.6em;
+  font-weight: 300;
+  color: #666666;
+  margin: 0;
+  text-align: right;
+}
+
+/* Hide pagination on title slides */
+section.title::after {
+  display: none;
+}
+
+/* Hide pagination on chapter slides */
+section.chapter::after {
+  display: none;
+}
+
+/* Hide pagination on groupwork slides */
+section.groupwork::after {
+  display: none;
+}
+
+/* Column layouts using div containers */
+.cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  align-items: start;
+}
+
+.cols-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  align-items: start;
+}
+
+/* Individual column styling */
+.col {
+  display: block;
+}
+
+/* Prevent list items from breaking across columns */
+.cols li,
+.cols-3 li,
+.col li {
+  break-inside: avoid;
+  page-break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+}
+
+/* Prevent entire lists from breaking */
+.cols ul,
+.cols ol,
+.cols-3 ul,
+.cols-3 ol,
+.col ul,
+.col ol {
+  break-inside: avoid;
+  page-break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  margin-top: 10px;
+}
+
+/* Ensure headings stay with their content in columns */
+.cols h1,
+.cols h2,
+.cols h3,
+.cols h4,
+.cols strong,
+.cols-3 h1,
+.cols-3 h2,
+.cols-3 h3,
+.cols-3 h4,
+.cols-3 strong,
+.col strong {
+  break-after: avoid;
+  page-break-after: avoid;
+  -webkit-column-break-after: avoid;
+  display: block;
+  margin-bottom: 5px;
+}

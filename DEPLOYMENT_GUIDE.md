@@ -494,5 +494,5 @@ See main README.md for detailed contribution guidelines.
 
 ---
 
-**Last Updated:** October 3, 2025
+**Last Updated:** October 29, 2025
 **Version:** 2.0 (Extended with resources and papers support)

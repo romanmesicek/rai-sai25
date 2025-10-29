@@ -9,12 +9,19 @@ This repository contains course materials, presentations, and student contributi
 This course explores the intersection of artificial intelligence and environmental sustainability, examining how AI can contribute to green solutions while addressing its own environmental impact.
 
 ### Key Topics
-- Climate Crisis & Information Technology
-- AI's Carbon Footprint and Environmental Impact
-- Green AI Strategies and Sustainable Computing
-- AI for Environmental Solutions
-- Sustainable Software Development
-- Energy-Efficient Machine Learning
+
+**Part 1: Global Sustainability Challenges**
+- Climate Crisis & Planetary Boundaries
+- Doughnut Economics Framework
+- History of Sustainability and Sustainable Development
+- Sustainable Development Goals (SDGs)
+
+**Part 2: Business Ethics & Corporate Responsibility**
+- Business Ethics & Ethical Values
+- Corporate Social Responsibility (CSR)
+- Stakeholder Management
+- Sustainability Reporting & Standards
+- EU Green Deal & Sustainable Finance
 
 ## 🌐 Course Website
 
@@ -106,4 +113,4 @@ This educational content is shared under [Creative Commons Attribution 4.0 Inter
 
 ---
 
-*Last updated: October 2025*
+*Last updated: October 29, 2025*
