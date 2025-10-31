@@ -1,6 +1,6 @@
 # Publications Directory
 
-This directory contains academic publications, whitepapers, and research outputs related to the RAI-SAI25 course.
+This directory contains academic publications, whitepapers, and research outputs related to the RAI-SAG25 course.
 
 ## Purpose
 
@@ -28,11 +28,11 @@ Publications are version-controlled through Git commits and tags. GitHub maintai
 
 ## Current Publications
 
-### RAI-SAI25 Whitepaper
+### RAI-SAG25 Whitepaper
 
-**File:** `RAI-SAI25_Whitepaper.md`
+**File:** `RAI-SAG25_Whitepaper.md`
 **Latest Update:** October 19, 2025
-**Description:** Academic whitepaper describing the GitHub-enabled collaborative learning approach used in the RAI-SAI25 course. Suitable for sharing with academic colleagues and use in course marketing.
+**Description:** Academic whitepaper describing the GitHub-enabled collaborative learning approach used in the RAI-SAG25 course. Suitable for sharing with academic colleagues and use in course marketing.
 
 **Topics Covered:**
 - Pedagogical framework and learning outcomes

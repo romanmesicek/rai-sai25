@@ -1,6 +1,6 @@
-# MARP Style Guide for SAI25 Course Presentations
+# MARP Style Guide for SAG25 Course Presentations
 
-This document describes the formatting conventions and style patterns used in SAI25 course presentations based on the `SAI_Part_01.md` template. Use this guide when creating new MARP presentations for this course.
+This document describes the formatting conventions and style patterns used in SAG25 course presentations based on the `SAG_Part_01.md` template. Use this guide when creating new MARP presentations for this course.
 
 ---
 
@@ -78,7 +78,7 @@ Roman Mesicek
 
 
 # Global Sustainability Challenges
-## SAI Part 1
+## SAG Part 1
 
 IMC University of Applied Sciences Krems, Austria
 Roman Mesicek

@@ -45,7 +45,7 @@ See the main [README.md](../README.md) for detailed contribution guidelines.
 
 ## Additional Resources
 
-- **Course Syllabus:** [SAI_Syllabus.md](../SAI_Syllabus.md)
+- **Course Syllabus:** [SAG_Syllabus.md](../SAG_Syllabus.md)
 - **Deployment Guide:** [DEPLOYMENT_GUIDE.md](../DEPLOYMENT_GUIDE.md)
 - **Main Documentation:** [README.md](../README.md)
 

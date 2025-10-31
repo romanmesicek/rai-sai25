@@ -292,7 +292,7 @@ jobs:
           <!DOCTYPE html>
           <html>
           <head>
-              <title>SAI25 Course Presentations</title>
+              <title>SAG25 Course Presentations</title>
               <meta charset="UTF-8">
               <meta name="viewport" content="width=device-width, initial-scale=1.0">
               <style>
@@ -452,7 +452,7 @@ jobs:
               </style>
           </head>
           <body>
-              <h1>📚 SAI25 Course Materials</h1>
+              <h1>📚 SAG25 Course Materials</h1>
               <p class="subtitle">Sustainability and AI for Green | Winter Semester 2025</p>
           EOF
 

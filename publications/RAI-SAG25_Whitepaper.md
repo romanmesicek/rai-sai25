@@ -12,7 +12,7 @@ roman.mesicek@fh-krems.ac.at
 
 ### ABSTRACT
 
-This whitepaper documents the design and preparation of GitHub-based collaborative infrastructure for teaching sustainability challenges and business responsibility within a master-level AI course at the University of Applied Sciences IMC Krems. The RAI-SAI25 course infrastructure, prepared for deployment in the upcoming semester, integrates version control and automated content delivery systems into the first half of a 5-ECTS course focusing on environmental impacts, business ethics, and corporate responsibility in AI development. This pre-implementation report describes the technical architecture, pedagogical rationale, and anticipated challenges of employing software development workflows in teaching sustainability and business responsibility concepts. The infrastructure is designed to model sustainable practices while delivering content on responsible AI deployment in business contexts.
+This whitepaper documents the design and preparation of GitHub-based collaborative infrastructure for teaching sustainability challenges and business responsibility within a master-level AI course at the University of Applied Sciences IMC Krems. The RAI-SAG25 course infrastructure, prepared for deployment in the upcoming semester, integrates version control and automated content delivery systems into the first half of a 5-ECTS course focusing on environmental impacts, business ethics, and corporate responsibility in AI development. This pre-implementation report describes the technical architecture, pedagogical rationale, and anticipated challenges of employing software development workflows in teaching sustainability and business responsibility concepts. The infrastructure is designed to model sustainable practices while delivering content on responsible AI deployment in business contexts.
 
 **Keywords:** Sustainability education, Business responsibility, AI ethics, GitHub, Educational infrastructure, Green computing, Pre-implementation design, Open educational resources
 
@@ -22,7 +22,7 @@ This whitepaper documents the design and preparation of GitHub-based collaborati
 
 The preparation of educational infrastructure for teaching sustainability and business responsibility in AI contexts requires careful consideration of both content delivery mechanisms and the implicit messages conveyed through chosen technologies. As organizations increasingly grapple with the environmental and ethical implications of AI deployment, educational programs must prepare students to navigate these challenges from business and sustainability perspectives (Schwartz et al., 2020).
 
-This whitepaper describes the preparation of infrastructure for the RAI-SAI25 course ("Sustainability and AI for Green") at the University of Applied Sciences IMC Krems, scheduled to begin in one month. Specifically, this document focuses on the first half of the course, which addresses sustainability challenges and business responsibility in AI contexts. The infrastructure employs GitHub as a central platform for content delivery and anticipated student interaction, though actual deployment and student engagement remain future considerations.
+This whitepaper describes the preparation of infrastructure for the RAI-SAG25 course ("Sustainability and AI for Green") at the University of Applied Sciences IMC Krems, scheduled to begin in one month. Specifically, this document focuses on the first half of the course, which addresses sustainability challenges and business responsibility in AI contexts. The infrastructure employs GitHub as a central platform for content delivery and anticipated student interaction, though actual deployment and student engagement remain future considerations.
 
 The infrastructure design addresses three preparatory objectives:
 
@@ -54,7 +54,7 @@ The adoption of open educational resources (OER) in business and sustainability 
 
 ### 3.1 Program Positioning
 
-The infrastructure serves the first half of the RAI-SAI25 course within the Master's program "Engineering Responsible AI Systems" at IMC Krems. This portion focuses on foundational concepts before transitioning to technical implementation in the course's second half (taught by another instructor).
+The infrastructure serves the first half of the RAI-SAG25 course within the Master's program "Engineering Responsible AI Systems" at IMC Krems. This portion focuses on foundational concepts before transitioning to technical implementation in the course's second half (taught by another instructor).
 
 ### 3.2 Content Focus: Sustainability and Business Responsibility
 

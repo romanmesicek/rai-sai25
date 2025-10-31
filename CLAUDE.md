@@ -3,7 +3,7 @@
 ## Project Overview
 
 **Repository Name:** rai-sai25
-**Course:** Sustainability and AI for Green (RAI-SAI25)
+**Course:** Sustainability and AI for Green (RAI-SAG25)
 **Institution:** UAS IMC Krems
 **Semester:** Winter Semester 2025
 **Course Type:** Integrated Course (ILV)
@@ -38,7 +38,7 @@ rai-sai25/
 │   └── README.md              # Paper guidelines
 ├── .gitignore                 # Git ignore patterns
 ├── README.md                  # Main repository documentation
-├── SAI_Syllabus.md           # Complete course syllabus
+├── SAG_Syllabus.md           # Complete course syllabus
 ├── DEPLOYMENT_GUIDE.md        # Deployment documentation
 └── CLAUDE.md                  # This file - AI assistant documentation
 ```
