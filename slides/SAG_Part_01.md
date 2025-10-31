@@ -17,7 +17,7 @@ order: 2
 IMC University of Applied Sciences Krems, Austria
 Roman Mesicek
 
-SAI Part 1
+SAG Part 1
 
 ---
 
@@ -47,7 +47,7 @@ SAI Part 1
 An [Introduction by Johan Rockström (TED Talk, 2010)](https://www.youtube.com/watch?v=RgqtrlixYR4) on the state of the world.
 
 ![height:100px](images/pt01_slide05_img1_800x600.jpg)
-![bg right:74% 105%](images/pt01_slide05_img2_1040x776.png)
+![bg right:78%](images/pt01_slide05_img2_1040x776.png)
 
 ---
 
@@ -87,23 +87,18 @@ Defining a safe operating space for humanity.
 
 # The Doughnut explained
 
-<style scoped>
-.cols {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  gap: 2rem;
-  padding-right: 1rem;
-}
-
-</style>
-
-
 <div class="cols">
 
-The inner ring of the Doughnut, **the Social Foundation**, sets a boundary for meeting the needs of all people. It includes life’s essentials for human wellbeing - inspired by and derived from the Sustainable Development Goals of the United Nations. Millions of people worldwide still cannot meet their essential needs.
+<div class="col">
 
-The outer ring of the Doughnut, **the Ecological Ceiling**, sets a boundary for a healthy planetary home.  This ceiling has been defined by the framework of 9 planetary boundaries. Since its creation in 2009 the framework has been revised several times. In the latest update (2023), six of the nine boundaries have been transgressed. Human activity is overshooting many of the planetary boundaries.
+The inner ring of the Doughnut, the "Social Foundation", sets a boundary for meeting the needs of all people. It includes life’s essentials for human wellbeing - inspired by and derived from the Sustainable Development Goals of the United Nations. Millions of people worldwide still cannot meet their essential needs.
+</div>
 
+<div class="col">
+
+The outer ring of the Doughnut, the "Ecological Ceiling", sets a boundary for a healthy planetary home.  This ceiling has been defined by the framework of 9 planetary boundaries. Since its creation in 2009 the framework has been revised several times. In the latest update (2023), six of the nine boundaries have been transgressed. Human activity is overshooting many of the planetary boundaries.
+
+</div>
 </div>
 
 ---
