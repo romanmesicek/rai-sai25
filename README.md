@@ -1,8 +1,8 @@
-# Sustainability and AI for Green (RAI-SAI25)
+# Sustainability and AI for Green (RAI SAG 25/26)
 
 **Master Course Repository | Winter Semester 2025**
 
-This repository contains course materials, presentations, and student contributions for the Master's course "Sustainability and AI for Green" (RAI-SAI25).
+This repository contains course materials, presentations, and student contributions for the Master's course "Sustainability and AI for Green" (RAI SAI 25/26).
 
 ## 📋 Course Overview
 
@@ -113,4 +113,4 @@ This educational content is shared under [Creative Commons Attribution 4.0 Inter
 
 ---
 
-*Last updated: October 29, 2025*
+*Last updated: October 31, 2025*
