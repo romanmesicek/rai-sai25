@@ -94,9 +94,9 @@ The module utilizes a blend of theoretical and practical activities to help stud
 
 | Assessment Type | Weight |
 |----------------|--------|
-| Written Exam | 60% |
+| Written Exam | 50% |
 | Submission (Deliverable) | 30% |
-| Presentation | 10% |
+| Presentation | 20% |
 
 ### Assessment Description
 

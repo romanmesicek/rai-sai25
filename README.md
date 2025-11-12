@@ -83,6 +83,19 @@ theme: neutral
 
 See [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md) for details.
 
+### Available Papers
+
+The following academic papers are available in the repository:
+
+- **Carroll (1991)** - The Pyramid of Corporate Social Responsibility
+- **Dyllick & Muff (2015)** - True Business Sustainability
+- **Fanning & Raworth (2025)** - World Out of Balance
+- **Kramer & Porter (2006)** - Strategy and Society
+- **Laurel et al. (2024)** - Dimensions of the Doughnut
+- **Zadek (2004)** - The Path to Corporate Responsibility
+
+All papers can be accessed and downloaded from the [course website](https://romanmesicek.github.io/rai-sai25/).
+
 ## 🛠️ Technology Stack
 
 - **Marp** - Markdown presentations

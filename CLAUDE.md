@@ -193,6 +193,14 @@ The repository uses GitHub Actions to automatically build and deploy presentatio
 
 **Naming Convention:** `author-year-topic.pdf`
 
+**Available Papers:**
+- **Carroll-1991-The-Pyramid-of-Corporate-Social-Responsibility.pdf** - Foundational framework for CSR
+- **Dyllick-Muff-2015-True-Business-Sustainability.pdf** - Business sustainability maturity model
+- **fanning-raworth-2025-world-out-of-balance.pdf** - Doughnut economics analysis
+- **Kramer-Porter-2006-Strategy-and-Society.pdf** - Strategic CSR and shared value
+- **Laurel-etal-2024-Dimensions-of-the-Doughnut.pdf** - Recent doughnut economics research
+- **Zadek-2004-The-Path-to-Corporate-Responsibility.pdf** - CSR evolution and pathways
+
 ### 5. Version Control Strategy
 
 **Gitignore Configuration:**

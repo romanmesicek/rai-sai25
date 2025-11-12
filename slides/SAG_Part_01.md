@@ -266,10 +266,9 @@ Aus <https://www.footprintnetwork.org/2015/09/23/eight-countries-meet-two-key-co
 
 <div class="cols">
 
-The Sustainable Development Goals (SDGs) are a global agenda, adopted by countries in 2015, with a vision of ending poverty, protecting the planet and ensuring that all people enjoy peace and prosperity. The 17 SDGs and 169 targets are part of what is known as the 2030 Agenda, which recognizes **"that eradicating poverty in all its forms and dimensions, including extreme poverty, is the greatest global challenge and an indispensable requirement for sustainable development."**
+The Sustainable Development Goals (SDGs) are a global agenda, adopted by countries in 2015, with a vision of ending poverty, protecting the planet and ensuring that all people enjoy peace and prosperity. The 17 SDGs and 169 targets are part of what is known as the 2030 Agenda, which recognizes "that eradicating poverty in all its forms and dimensions, including extreme poverty, is the greatest global challenge and an indispensable requirement for sustainable development."
 
-In adopting the agenda, countries resolved to take the **"bold and transformative steps which are urgently needed to shift the world onto a sustainable and resilient path. As we embark on this collective journey, we pledge that no one will be left behind."**
-The goals and targets are universal, meaning they apply to all countries around the world, not just poor countries. Reaching the goals requires action on all fronts – governments, businesses, civil society and people everywhere all have a role to play.
+In adopting the agenda, countries resolved to take the "bold and transformative steps which are urgently needed to shift the world onto a sustainable and resilient path. As we embark on this collective journey, we pledge that no one will be left behind." The goals and targets are universal, meaning they apply to all countries around the world, not just poor countries. Reaching the goals requires action on all fronts – governments, businesses, civil society and people everywhere all have a role to play.
 
 </div>
 

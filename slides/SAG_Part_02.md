@@ -240,12 +240,15 @@ Using the theory of organizational learning Simon Zadek introduced a stage model
 
 ---
 
-# CSR according to ISO 26000
+# CSR definition according to ISO 26000
 
-Definition according to the International Standardisation Organisation (ISO) standard on Social Responsibility (ISO 26000 Social Responsibility).
+The responsibility of an organisation for the impacts of its decisions and activities on society and the environment, through transparent and ethical behaviour that
+* contributes to sustainable development, including health and the welfare of society;
+* takes into account the expectations of stakeholders;
+* is in compliance with applicable law and consistent with international norms of behaviour; and
+* is integrated throughout the organisation and practised in its relationships.
 
-
-
+###### International Standardisation Organisation (ISO) standard on Social Responsibility (ISO 26000 SR).
 
 ---
 
