@@ -47,8 +47,8 @@ SAG Part 2
 **Tasks:**
 - Decide on a Company and inform everyone
 - Add Logo to Padlet
-- Answer the Question (in the Padlet):
-**What is the core business of the company?**
+- Answer the Question: (in the Whiteboard)
+What is the core business of the company?
 How does it earn profits? What does it produce, offer, sell or which service does it provide?
 
 **Breakout group discussion, 15 Minutes**
@@ -67,7 +67,7 @@ How does it earn profits? What does it produce, offer, sell or which service doe
 
 **Tasks:**
 - Do a quick research into the sustainability report (or similar) of your company and look for ethical values
-- Post to Padlet
+- Post to Whiteboard
 - Presentation and Discussion
 
 **Breakout group discussion, 15 Minutes**
@@ -98,7 +98,7 @@ Questions to consider:
 **Tasks:**
 - Use not only the sustainability report but also other articles you find for your research
 - Breakout group work, 15 Minutes
-- Post to Padlet & plenary discussion
+- Post to Whiteboard & plenary discussion
 
 **Breakout group discussion, 15 Minutes**
 
@@ -114,7 +114,7 @@ Questions to consider:
 **Tasks:**
 - Use the methodology of Dyllick/Muff to determine the level of CSR maturity of your company
 - Give some reasons for your result
-- Post to Padlet
+- Post to Whiteboard
 - Presentation and Discussion
 
 **Breakout group discussion, 15 Minutes**
