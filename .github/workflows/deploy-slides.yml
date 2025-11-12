@@ -27,9 +27,8 @@ jobs:
         run: |
           npm install -g @marp-team/marp-cli
           # Install pandoc for markdown to HTML conversion
-          # Install poppler-utils for pdfinfo (PDF metadata extraction)
           sudo apt-get update
-          sudo apt-get install -y pandoc poppler-utils
+          sudo apt-get install -y pandoc
       
       - name: Build all slides
         run: |
@@ -560,25 +559,9 @@ jobs:
                 # Get file size
                 size=$(du -h "$file" | cut -f1)
 
-                # Try to extract PDF metadata (title only) if pdfinfo is available
-                # Note: We don't use author metadata as it often only shows first author
-                title=""
-                if command -v pdfinfo &> /dev/null; then
-                  title=$(pdfinfo "$file" 2>/dev/null | grep "^Title:" | sed 's/Title:\s*//' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
-
-                  # Clear title if it's just "Untitled" or empty
-                  if [ "$title" = "Untitled" ] || [ -z "$title" ]; then
-                    title=""
-                  fi
-                fi
-
-                # Use title from PDF metadata, or show filename without extension
-                if [ -n "$title" ]; then
-                  citation="$title"
-                else
-                  # No metadata - show filename without .pdf extension
-                  citation="$name"
-                fi
+                # Always use filename for the title
+                # Remove .pdf extension and replace dashes with spaces
+                citation=$(echo "$name" | sed 's/-/ /g')
 
                 echo "<div class='slide-item'>" >> dist/index.html
                 echo "  <div class='slide-header'>" >> dist/index.html
