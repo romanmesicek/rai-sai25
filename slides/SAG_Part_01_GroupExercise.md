@@ -88,7 +88,7 @@ Ozone layer depletion
 **Actions:**
 - Select a topic from the Doughnut Economics framework
 - **Recommendation**: "Step out of your comfort zone"
-- Form groups (3-4 people per topic)
+- Form groups (3 people per topic)
 - Familiarize yourself with the topic using available resources
 
 

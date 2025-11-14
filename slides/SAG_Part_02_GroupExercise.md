@@ -28,7 +28,7 @@ SAG Part 2
 ## **Goal:** Select a technology company (hardware, software, AI) for further investigations
 - Company has to be multinational
 - Company should have sustainability information available
-- 3-4 participants in each team
+- 3 participants in each team
 
 - Topics to be covered during group work:
   - Corporate values 
