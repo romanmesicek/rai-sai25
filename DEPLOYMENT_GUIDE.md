@@ -38,7 +38,7 @@ All content is automatically built and deployed to GitHub Pages when pushed to t
 ```
 rai-sai25/
 ├── slides/              # Marp presentation files
-│   ├── *.md            # Markdown slides
+│   ├── *.md            # Markdown slides (Parts 01-02, Part 03 excluded)
 │   └── images/         # Slide images
 ├── resources/          # Additional course materials (optional)
 │   └── *.md           # Markdown resources
@@ -46,6 +46,8 @@ rai-sai25/
 │   └── *.pdf          # PDF documents
 └── .github/workflows/
     └── deploy-slides.yml
+
+Note: Part 03 materials (*Part_03*, *part_03*, *_03_*) are excluded via .gitignore
 ```
 
 ---
@@ -286,6 +288,7 @@ Manual trigger also available via GitHub Actions UI.
 2. Add descriptions for better index page UX
 3. Test locally with Marp CLI before pushing
 4. Optimize images (compress before adding)
+5. Part 03 materials are excluded from deployment (see `.gitignore`)
 
 ### For Resources
 

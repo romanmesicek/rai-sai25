@@ -50,6 +50,7 @@ Contains GitHub Actions automation workflows for CI/CD processes.
 
 #### `slides/`
 Marp-based presentation slides in Markdown format, with supporting images.
+**Note:** Part 03 materials are excluded from version control (development in progress).
 
 #### `resources/` (NEW)
 Additional course materials in Markdown format. Converted to styled HTML pages automatically.
@@ -207,18 +208,24 @@ The repository uses GitHub Actions to automatically build and deploy presentatio
 - Excludes build outputs (HTML, PPTX, images from Marp)
 - **Excludes PDFs by default** (Marp outputs)
 - **EXCEPT allows** `papers/*.pdf` (exception with `!` prefix)
+- **Excludes Part 03 materials** (development in progress)
 - Excludes distribution directories
 - Excludes source materials (`00_material/`)
 - Excludes Node.js dependencies
 - Excludes OS and IDE files
 
-**Critical Pattern:**
+**Critical Patterns:**
 ```gitignore
 *.pdf           # Ignore all PDFs (Marp outputs)
 !papers/*.pdf   # BUT allow PDFs in papers/ directory
+
+# Part 03 files (not ready yet)
+*Part_03*
+*part_03*
+*_03_*
 ```
 
-This approach keeps the repository focused on source content while allowing course papers to be tracked.
+This approach keeps the repository focused on published content while allowing course papers to be tracked and excluding work-in-progress materials.
 
 ---
 

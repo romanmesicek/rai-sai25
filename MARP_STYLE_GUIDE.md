@@ -469,6 +469,8 @@ Reference images with relative path:
 ![alt](images/filename.png)
 ```
 
+**Note:** Images for Part 03 are excluded from version control as per `.gitignore` patterns.
+
 ---
 
 ## 12. Content Structure Patterns
@@ -849,6 +851,32 @@ Instructions here.
 
 ---
 
-*Last Updated: October 29, 2025*
+## 19. Version Control Exclusions
+
+### Part 03 Materials
+
+Part 03 materials are currently in development and excluded from version control via `.gitignore`:
+
+```gitignore
+# Part 03 files (not ready yet)
+*Part_03*
+*part_03*
+*_03_*
+```
+
+**Excluded patterns:**
+- Any file containing `Part_03`, `part_03`, or `_03_` in the filename
+- Applies to slides, images, and related materials
+- Allows development without affecting published content
+
+**When Part 03 is ready:**
+1. Remove exclusion patterns from `.gitignore`
+2. Add Part 03 materials to repository
+3. Update documentation to reflect new content
+4. Deploy via standard GitHub Actions workflow
+
+---
+
+*Last Updated: January 16, 2025*
 *Based on: SAI_Part_01.md and SAI_Part_02.md template analysis*
 *Generated for Claude Desktop and other AI assistants*

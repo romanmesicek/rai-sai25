@@ -23,6 +23,8 @@ This course explores the intersection of artificial intelligence and environment
 - Sustainability Reporting & Standards
 - EU Green Deal & Sustainable Finance
 
+**Part 3:** *(In development - not yet published)*
+
 ## 🌐 Course Website
 
 All materials are automatically deployed to GitHub Pages:
@@ -37,7 +39,7 @@ All materials are automatically deployed to GitHub Pages:
 ```
 rai-sai25/
 ├── slides/                  # Marp presentation slides
-│   ├── *.md                # Markdown slides
+│   ├── *.md                # Markdown slides (Parts 01-02)
 │   ├── images/             # Slide images
 │   └── themes/             # Marp presentation themes
 │       └── neutral.css     # Custom neutral theme
@@ -52,6 +54,8 @@ rai-sai25/
 ├── README.md              # This file
 ├── SAI_Syllabus.md        # Complete course syllabus
 └── DEPLOYMENT_GUIDE.md    # Deployment documentation
+
+Note: Part 03 materials are in development and excluded from version control.
 ```
 
 ## 🚀 Quick Start
