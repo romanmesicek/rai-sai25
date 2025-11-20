@@ -523,124 +523,173 @@ jobs:
           EOF
           fi
 
-          # Add Papers section (BEFORE Resources!)
-          # Add Papers section
-          if [ -d "papers" ] && [ -n "$(find papers -maxdepth 1 -name '*.pdf' 2>/dev/null)" ]; then
-            cat >> dist/index.html << 'EOF'
-              <div class="section">
-                  <h2 class="section-title">📚 Literature & Papers</h2>
-                  <div class="slides">
-          EOF
+          # Add Resources section with subsections
+          # Check if any resources or papers exist
+          resource_count=$(find resources -maxdepth 1 -name '*.md' ! -name 'README.md' ! -name 'contact-support.md' ! -name 'references.md' 2>/dev/null | wc -l)
+          papers_exist=false
+          [ -d "papers" ] && [ -n "$(find papers -maxdepth 1 -name '*.pdf' 2>/dev/null)" ] && papers_exist=true
+          references_exist=false
+          [ -f "dist/resources/references.html" ] && references_exist=true
 
-            # Create temporary file for sorting
-            temp_papers=$(mktemp)
-
-            # Collect papers with metadata
-            for file in papers/*.pdf; do
-              if [ -f "$file" ]; then
-                filename=$(basename "$file")
-
-                # Skip README, .gitkeep, and other non-PDF files
-                if [[ "$filename" == "README.md" ]] || [[ "$filename" == ".gitkeep" ]] || [[ ! "$filename" =~ \.pdf$ ]]; then
-                  continue
-                fi
-
-                # Add to temp file for sorting
-                echo "$file" >> "$temp_papers"
-              fi
-            done
-
-            # Sort papers alphabetically and process
-            sort "$temp_papers" | while IFS= read -r file; do
-              if [ -f "$file" ]; then
-                name=$(basename "$file" .pdf)
-                filename=$(basename "$file")
-
-                # Get file size
-                size=$(du -h "$file" | cut -f1)
-
-                # Always use filename for the title
-                # Remove .pdf extension and replace dashes with spaces
-                citation=$(echo "$name" | sed 's/-/ /g')
-
-                echo "<div class='slide-item'>" >> dist/index.html
-                echo "  <div class='slide-header'>" >> dist/index.html
-                echo "    <div class='slide-info'>" >> dist/index.html
-                echo "      <div class='slide-title'>$citation</div>" >> dist/index.html
-                echo "      <div class='slide-description'>PDF ($size)</div>" >> dist/index.html
-                echo "    </div>" >> dist/index.html
-                echo "    <div class='slide-links'>" >> dist/index.html
-                echo "      <a href='papers/${filename}' class='btn-download' download>Download</a>" >> dist/index.html
-                echo "    </div>" >> dist/index.html
-                echo "  </div>" >> dist/index.html
-                echo "</div>" >> dist/index.html
-              fi
-            done
-
-            # Clean up temp file
-            rm -f "$temp_papers"
-
-            cat >> dist/index.html << 'EOF'
-                  </div>
-              </div>
-          EOF
-          fi
-
-          # Add Resources section (AFTER Papers!)
-          # Check if resources exist (excluding README.md and contact-support.md)
-          resource_count=$(find resources -maxdepth 1 -name '*.md' ! -name 'README.md' ! -name 'contact-support.md' 2>/dev/null | wc -l)
-          if [ -d "resources" ] && [ "$resource_count" -gt 0 ]; then
+          if [ -d "resources" ] && ([ "$resource_count" -gt 0 ] || [ "$papers_exist" = true ] || [ "$references_exist" = true ]); then
             cat >> dist/index.html << 'EOF'
               <div class="section">
                   <h2 class="section-title">🔗 Resources</h2>
+          EOF
+
+            # Subsection 1: Downloads (Papers)
+            if [ "$papers_exist" = true ]; then
+              cat >> dist/index.html << 'EOF'
+                  <h3 style="font-size: 1.3rem; font-weight: 500; margin: 1.5rem 0 1rem 0; color: #555;">Downloads</h3>
                   <div class="slides">
           EOF
 
-            for file in resources/*.md; do
-              if [ -f "$file" ]; then
-                filename=$(basename "$file")
+              # Create temporary file for sorting
+              temp_papers=$(mktemp)
 
-                # Skip README and contact-support files
-                if [[ "$filename" == "README.md" ]] || [[ "$filename" == "contact-support.md" ]] || [[ "$filename" == ".gitkeep" ]]; then
-                  continue
+              # Collect papers with metadata
+              for file in papers/*.pdf; do
+                if [ -f "$file" ]; then
+                  filename=$(basename "$file")
+
+                  # Skip README, .gitkeep, and other non-PDF files
+                  if [[ "$filename" == "README.md" ]] || [[ "$filename" == ".gitkeep" ]] || [[ ! "$filename" =~ \.pdf$ ]]; then
+                    continue
+                  fi
+
+                  # Add to temp file for sorting
+                  echo "$file" >> "$temp_papers"
                 fi
+              done
 
-                name=$(basename "$file" .md)
+              # Sort papers alphabetically and process
+              sort "$temp_papers" | while IFS= read -r file; do
+                if [ -f "$file" ]; then
+                  name=$(basename "$file" .pdf)
+                  filename=$(basename "$file")
 
-                # Check if HTML was generated
-                if [ -f "dist/resources/${name}.html" ]; then
-                  # Extract H1 title from markdown file (same as page title)
-                  title=$(grep -m 1 "^# " "$file" | sed 's/^# //' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
+                  # Get file size
+                  size=$(du -h "$file" | cut -f1)
 
-                  # Fallback to formatted filename if no H1
-                  if [ -z "$title" ]; then
-                    title=$(echo "$name" | sed 's/[-_]/ /g' | sed 's/\b\(.\)/\u\1/g')
-                  fi
-
-                  # Extract description (optional)
-                  description=$(grep -m 1 "<!-- description:" "$file" | sed 's/<!-- description: \(.*\) -->/\1/' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
-
-                  if [ -z "$description" ]; then
-                    description="Additional course resources and links"
-                  fi
+                  # Always use filename for the title
+                  # Remove .pdf extension and replace dashes with spaces
+                  citation=$(echo "$name" | sed 's/-/ /g')
 
                   echo "<div class='slide-item'>" >> dist/index.html
                   echo "  <div class='slide-header'>" >> dist/index.html
                   echo "    <div class='slide-info'>" >> dist/index.html
-                  echo "      <div class='slide-title'>$title</div>" >> dist/index.html
-                  echo "      <div class='slide-description'>$description</div>" >> dist/index.html
+                  echo "      <div class='slide-title'>$citation</div>" >> dist/index.html
+                  echo "      <div class='slide-description'>PDF ($size)</div>" >> dist/index.html
                   echo "    </div>" >> dist/index.html
                   echo "    <div class='slide-links'>" >> dist/index.html
-                  echo "      <a href='resources/${name}.html' class='btn-resource'>View</a>" >> dist/index.html
+                  echo "      <a href='papers/${filename}' class='btn-download' download>Download</a>" >> dist/index.html
                   echo "    </div>" >> dist/index.html
                   echo "  </div>" >> dist/index.html
                   echo "</div>" >> dist/index.html
                 fi
+              done
+
+              # Clean up temp file
+              rm -f "$temp_papers"
+
+              cat >> dist/index.html << 'EOF'
+                  </div>
+          EOF
+            fi
+
+            # Subsection 2: Literature (References)
+            if [ "$references_exist" = true ]; then
+              cat >> dist/index.html << 'EOF'
+                  <h3 style="font-size: 1.3rem; font-weight: 500; margin: 2rem 0 1rem 0; color: #555;">Literature</h3>
+                  <div class="slides">
+                      <div class='slide-item'>
+                          <div class='slide-header'>
+                              <div class='slide-info'>
+                                  <div class='slide-title'>Complete Reference List</div>
+                                  <div class='slide-description'>APA-style citations of all sources used in course materials</div>
+                              </div>
+                              <div class='slide-links'>
+                                  <a href='resources/references.html' class='btn-resource'>View</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+          EOF
+            fi
+
+            # Subsection 3: Useful Tools
+            if [ -f "dist/resources/useful-tools.html" ]; then
+              cat >> dist/index.html << 'EOF'
+                  <h3 style="font-size: 1.3rem; font-weight: 500; margin: 2rem 0 1rem 0; color: #555;">Useful Tools</h3>
+                  <div class="slides">
+          EOF
+
+              file="resources/useful-tools.md"
+              if [ -f "$file" ]; then
+                title=$(grep -m 1 "^# " "$file" | sed 's/^# //' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
+                if [ -z "$title" ]; then
+                  title="Useful Tools"
+                fi
+                description=$(grep -m 1 "<!-- description:" "$file" | sed 's/<!-- description: \(.*\) -->/\1/' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
+                if [ -z "$description" ]; then
+                  description="Collection of AI and sustainability tools"
+                fi
+
+                echo "<div class='slide-item'>" >> dist/index.html
+                echo "  <div class='slide-header'>" >> dist/index.html
+                echo "    <div class='slide-info'>" >> dist/index.html
+                echo "      <div class='slide-title'>$title</div>" >> dist/index.html
+                echo "      <div class='slide-description'>$description</div>" >> dist/index.html
+                echo "    </div>" >> dist/index.html
+                echo "    <div class='slide-links'>" >> dist/index.html
+                echo "      <a href='resources/useful-tools.html' class='btn-resource'>View</a>" >> dist/index.html
+                echo "    </div>" >> dist/index.html
+                echo "  </div>" >> dist/index.html
+                echo "</div>" >> dist/index.html
               fi
-            done
+
+              cat >> dist/index.html << 'EOF'
+                  </div>
+          EOF
+            fi
+
+            # Subsection 4: External Links
+            if [ -f "dist/resources/external-links.html" ]; then
+              cat >> dist/index.html << 'EOF'
+                  <h3 style="font-size: 1.3rem; font-weight: 500; margin: 2rem 0 1rem 0; color: #555;">External Links</h3>
+                  <div class="slides">
+          EOF
+
+              file="resources/external-links.md"
+              if [ -f "$file" ]; then
+                title=$(grep -m 1 "^# " "$file" | sed 's/^# //' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
+                if [ -z "$title" ]; then
+                  title="External Links"
+                fi
+                description=$(grep -m 1 "<!-- description:" "$file" | sed 's/<!-- description: \(.*\) -->/\1/' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
+                if [ -z "$description" ]; then
+                  description="External resources and datasets"
+                fi
+
+                echo "<div class='slide-item'>" >> dist/index.html
+                echo "  <div class='slide-header'>" >> dist/index.html
+                echo "    <div class='slide-info'>" >> dist/index.html
+                echo "      <div class='slide-title'>$title</div>" >> dist/index.html
+                echo "      <div class='slide-description'>$description</div>" >> dist/index.html
+                echo "    </div>" >> dist/index.html
+                echo "    <div class='slide-links'>" >> dist/index.html
+                echo "      <a href='resources/external-links.html' class='btn-resource'>View</a>" >> dist/index.html
+                echo "    </div>" >> dist/index.html
+                echo "  </div>" >> dist/index.html
+                echo "</div>" >> dist/index.html
+              fi
+
+              cat >> dist/index.html << 'EOF'
+                  </div>
+          EOF
+            fi
 
             cat >> dist/index.html << 'EOF'
-                  </div>
               </div>
           EOF
           fi

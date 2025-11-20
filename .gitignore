@@ -91,6 +91,7 @@ AUTO_COLUMNS_QUICKREF.md
 
 # Source files
 00_material/
+_extraction/
 
 # AI files
 CLAUDE.md

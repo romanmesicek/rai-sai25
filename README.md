@@ -29,8 +29,7 @@ This course explores the intersection of artificial intelligence and environment
 
 All materials are automatically deployed to GitHub Pages:
 - **📊 Slides** - HTML and PDF presentations
-- **🔗 Resources** - Additional materials and links
-- **📚 Papers** - Downloadable academic literature
+- **🔗 Resources** - Downloads, literature references, tools, and external links
 
 **Visit: [https://romanmesicek.github.io/rai-sai25/](https://romanmesicek.github.io/rai-sai25/)**
 
@@ -44,6 +43,7 @@ rai-sai25/
 │   └── themes/             # Marp presentation themes
 │       └── neutral.css     # Custom neutral theme
 ├── resources/              # Additional course materials (Markdown)
+│   ├── references.md       # APA-style reference list
 │   ├── useful-tools.md
 │   ├── external-links.md
 │   └── contact-support.md

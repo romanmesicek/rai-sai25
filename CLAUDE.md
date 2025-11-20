@@ -27,9 +27,10 @@ rai-sai25/
 │   ├── images/                # Images for presentations
 │   └── themes/                # Custom Marp themes
 │       └── neutral.css        # Neutral presentation theme
-├── resources/                  # Additional course materials (NEW)
+├── resources/                  # Additional course materials
 │   ├── useful-tools.md        # Tool collection
 │   ├── external-links.md      # External resources
+│   ├── references.md          # APA-style reference list
 │   ├── contact-support.md     # Contact information
 │   └── README.md              # Resource guidelines
 ├── papers/                     # Academic papers (NEW)
@@ -165,34 +166,34 @@ The repository uses GitHub Actions to automatically build and deploy presentatio
 - Body: 28px, 1.4 line height
 - Lists: 30px left padding, 8px item spacing
 
-### 3. Resources Section (NEW)
+### 3. Resources Section
 
-**Purpose:** Additional course materials beyond slides - tools, links, reading lists, etc.
+**Purpose:** Unified section for all course materials beyond slides - papers, tools, links, and references.
 
-**Features:**
+**Website Structure:**
+The Resources section on the website contains four subsections:
+
+1. **Downloads** - Academic papers and studies (PDFs from `papers/` directory)
+2. **Literature** - Complete APA-style reference list (`references.md`)
+3. **Useful Tools** - Collection of AI & sustainability tools (`useful-tools.md`)
+4. **External Links** - External resources and datasets (`external-links.md`)
+
+**Technical Features:**
 - Markdown files converted to styled HTML via Pandoc
 - H1 extracted as page title (browser tab shows proper title)
 - Custom CSS with dark mode support
 - Supports all Markdown features (code blocks, tables, images, etc.)
-- README.md files automatically skipped
+- PDF files directly downloadable with file size display
+- Alphabetical sorting for downloads
+- README.md and contact-support.md automatically excluded from listings
 
-**Example Files:**
-- `useful-tools.md` - Collection of AI & sustainability tools
-- `external-links.md` - External resources and datasets
-- `contact-support.md` - Course contact information
-
-### 4. Papers Section (NEW)
-
-**Purpose:** Academic literature and course reference materials
-
-**Features:**
-- PDF files directly downloadable
-- PDF metadata extraction (title from file if available)
-- File size display (human-readable)
-- Alphabetical sorting
-- Card-based display matching slides design
-
-**Naming Convention:** `author-year-topic.pdf`
+**References File (`references.md`):**
+- Complete list of sources cited in course materials
+- APA 7th edition formatting
+- Single alphabetical list (no section headings)
+- 23 references from academic publications, standards, and reports
+- Automatically converted to styled HTML
+- Accessible from both Resources section and Literature subsection
 
 **Available Papers:**
 - **Carroll-1991-The-Pyramid-of-Corporate-Social-Responsibility.pdf** - Foundational framework for CSR
@@ -202,7 +203,7 @@ The repository uses GitHub Actions to automatically build and deploy presentatio
 - **Laurel-etal-2024-Dimensions-of-the-Doughnut.pdf** - Recent doughnut economics research
 - **Zadek-2004-The-Path-to-Corporate-Responsibility.pdf** - CSR evolution and pathways
 
-### 5. Version Control Strategy
+### 4. Version Control Strategy
 
 **Gitignore Configuration:**
 - Excludes build outputs (HTML, PPTX, images from Marp)
@@ -210,7 +211,7 @@ The repository uses GitHub Actions to automatically build and deploy presentatio
 - **EXCEPT allows** `papers/*.pdf` (exception with `!` prefix)
 - **Excludes Part 03 materials** (development in progress)
 - Excludes distribution directories
-- Excludes source materials (`00_material/`)
+- Excludes source materials (`00_material/`, `_extraction/`)
 - Excludes Node.js dependencies
 - Excludes OS and IDE files
 
@@ -901,5 +902,37 @@ For questions, issues, or contributions:
 
 ---
 
-*Last Updated: October 29, 2025*
+---
+
+## Recent Updates (November 20, 2025)
+
+### Website Restructuring
+- **Unified Resources Section:** Consolidated all course materials under single Resources section with four subsections
+- **New Structure:**
+  - Downloads (Papers and Studies)
+  - Literature (APA Reference List)
+  - Useful Tools
+  - External Links
+- **Removed:** Separate "Literature & Papers" top-level section
+
+### New Features
+- **References Page:** Added `resources/references.md` with complete APA 7th edition reference list
+- **23 Citations:** All sources from course slides compiled and formatted alphabetically
+- **Smart Subsections:** Each subsection only appears if content exists
+
+### Exercise Updates
+- **Part 03 Group Exercise:** Extended timeline from 60 to 90 minutes
+  - Setup: 5→10 min
+  - Design: 20→30 min
+  - Ethics: 10→15 min
+  - Present: 10→15 min
+  - Synthesis: 10→15 min
+
+### Repository Maintenance
+- **Gitignore:** Added `_extraction/` directory to exclusions
+- **Documentation:** Updated CLAUDE.md to reflect new structure
+
+---
+
+*Last Updated: November 20, 2025*
 *Generated and maintained with Claude AI Assistant*
