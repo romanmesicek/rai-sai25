@@ -23,7 +23,9 @@ This course explores the intersection of artificial intelligence and environment
 - Sustainability Reporting & Standards
 - EU Green Deal & Sustainable Finance
 
-**Part 3:** *(In development - not yet published)*
+**Part 3: AI and Sustainability Paradox**
+- **Basics:** The environmental impact of AI, data centers, and computing infrastructure; Green AI strategies and energy-efficient machine learning
+- **Cases:** Real-world applications of AI for sustainability in agriculture, energy, transportation, waste management, and circular economy
 
 ## 🌐 Course Website
 
@@ -46,7 +48,7 @@ All materials are automatically deployed to GitHub Pages:
 ```
 rai-sai25/
 ├── slides/                  # Marp presentation slides
-│   ├── *.md                # Markdown slides (Parts 01-02)
+│   ├── *.md                # Markdown slides (Parts 01-03)
 │   ├── images/             # Slide images
 │   └── themes/             # Marp presentation themes
 │       └── neutral.css     # Custom neutral theme
@@ -64,7 +66,6 @@ rai-sai25/
 ├── SAI_Syllabus.md        # Complete course syllabus
 └── DEPLOYMENT_GUIDE.md    # Deployment documentation
 
-Note: Part 03 materials are in development and excluded from version control.
 ```
 
 ## 🚀 Quick Start
@@ -127,4 +128,4 @@ This educational content is shared under [Creative Commons Attribution 4.0 Inter
 
 ---
 
-*Last updated: October 31, 2025*
+*Last updated: November 20, 2025*

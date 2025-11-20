@@ -20,6 +20,8 @@ Roman Mesicek
 
 SAG Part 2
 
+###### Full reference list available at [GitHub](https://github.com/romanmesicek/rai-sai25/blob/main/resources/references.md)
+
 ---
 <!-- _class: chapter -->
 # Business Ethics
@@ -104,8 +106,7 @@ Business ethics is the study of business situations, activities, and decisions w
 Based on a publication defining and measuring organizational values.
 
 ![bg right:51% contain](images/pt02_slide09_valueslist.png)
-
-###### Junxion “Value Based Culture“, 2025
+######  Sources: Junxion, 2025
 
 ---
 
@@ -134,8 +135,7 @@ Results of an employee surveys meta study.
 </div>
 </div>
 
-###### Employee expectations study, Global Tolerance, 2015
-
+###### Sources: Global Tolerance, 2015
 
 ---
 
@@ -226,8 +226,7 @@ An [Introduction by Thomas Beschorner (University of St.Gallen, 2012)](https://w
 
 The first theoretical framework for corporate social responsibility.
 
-
-###### Source:  Carroll, A.B.: The Pyramid of Corporate Social Responsibility, in: Business Horizons, Bd. 34 (1991), Nr. 4, S. 42.
+######  Sources: Carroll, 1991
 
 
 ---
@@ -248,7 +247,7 @@ The responsibility of an organisation for the impacts of its decisions and activ
 * is in compliance with applicable law and consistent with international norms of behaviour; and
 * is integrated throughout the organisation and practised in its relationships.
 
-###### International Standardisation Organisation (ISO) standard on Social Responsibility (ISO 26000 SR).
+*Note: International Standardisation Organisation (ISO) standard on Social Responsibility (ISO 26000 SR).
 
 ---
 
@@ -284,7 +283,7 @@ The responsibility of an organisation for the impacts of its decisions and activ
 </div>
 </div>
 
-###### Adapted from Porter & Kramer (2006), PWC (2016) and Faber-Wiener (2011)
+###### Sources: Porter & Kramer, 2006; PwC, 2016; Faber-Wiener, 2011
 
 
 ---
@@ -527,6 +526,5 @@ An [Introduction by Thomas Dyllick (University of St.Gallen, 2016)](https://www.
 
 
 ![bg right:70% contain](images/pt02_slide38_img1_dyllickmuff.png)
-
-###### Thomas Dyllick and Kathrin Muff (2015)
+######  Sources: Dyllick & Muff, 2015
 

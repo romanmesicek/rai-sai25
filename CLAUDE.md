@@ -50,8 +50,7 @@ rai-sai25/
 Contains GitHub Actions automation workflows for CI/CD processes.
 
 #### `slides/`
-Marp-based presentation slides in Markdown format, with supporting images.
-**Note:** Part 03 materials are excluded from version control (development in progress).
+Marp-based presentation slides in Markdown format, with supporting images. All course parts (01-03) are now included.
 
 #### `resources/` (NEW)
 Additional course materials in Markdown format. Converted to styled HTML pages automatically.
@@ -191,9 +190,10 @@ The Resources section on the website contains four subsections:
 - Complete list of sources cited in course materials
 - APA 7th edition formatting
 - Single alphabetical list (no section headings)
-- 23 references from academic publications, standards, and reports
+- 100+ references from academic publications, standards, and reports
 - Automatically converted to styled HTML
 - Accessible from both Resources section and Literature subsection
+- All slide presentations link to this reference list on their title slides
 
 **Available Papers:**
 - **Carroll-1991-The-Pyramid-of-Corporate-Social-Responsibility.pdf** - Foundational framework for CSR
@@ -209,24 +209,22 @@ The Resources section on the website contains four subsections:
 - Excludes build outputs (HTML, PPTX, images from Marp)
 - **Excludes PDFs by default** (Marp outputs)
 - **EXCEPT allows** `papers/*.pdf` (exception with `!` prefix)
-- **Excludes Part 03 materials** (development in progress)
 - Excludes distribution directories
 - Excludes source materials (`00_material/`, `_extraction/`)
 - Excludes Node.js dependencies
 - Excludes OS and IDE files
+- Excludes CLAUDE.md (AI assistant documentation)
 
 **Critical Patterns:**
 ```gitignore
 *.pdf           # Ignore all PDFs (Marp outputs)
 !papers/*.pdf   # BUT allow PDFs in papers/ directory
 
-# Part 03 files (not ready yet)
-*Part_03*
-*part_03*
-*_03_*
+# AI files
+CLAUDE.md       # AI assistant documentation
 ```
 
-This approach keeps the repository focused on published content while allowing course papers to be tracked and excluding work-in-progress materials.
+This approach keeps the repository focused on published content while allowing course papers to be tracked.
 
 ---
 
@@ -604,6 +602,154 @@ The generated index page includes:
 **Build Outputs:**
 - HTML: `SAI_Part_02_GroupExercise.html`
 - PDF: `SAI_Part_02_GroupExercise.pdf`
+
+---
+
+### SAG_Part_03_Basics.md
+
+**Location:** [slides/SAG_Part_03_Basics.md](slides/SAG_Part_03_Basics.md)
+
+**Description:** "The AI/Sustainability Paradox - Environmental Impact and Green AI"
+
+**Topics Covered:**
+- The energy footprint of artificial intelligence
+- Data center environmental impact
+- Computing infrastructure and resource consumption
+- E-waste and hardware lifecycle
+- Green AI strategies and methodologies
+- Energy-efficient machine learning
+- Carbon-aware computing
+- Sustainable AI development practices
+
+**Key Features:**
+- 75+ slides with comprehensive coverage
+- Multiple images (pt03_ prefixed, properly sized)
+- 24 consolidated citation lines with author-date format
+- Detailed technical content on AI environmental impact
+- Practical strategies for sustainable AI
+
+**Build Outputs:**
+- HTML: `SAG_Part_03_Basics.html`
+- PDF: `SAG_Part_03_Basics.pdf`
+
+---
+
+### SAG_Part_03_Cases.md
+
+**Location:** [slides/SAG_Part_03_Cases.md](slides/SAG_Part_03_Cases.md)
+
+**Description:** "AI for Sustainability - Real-World Applications and Case Studies"
+
+**Topics Covered:**
+- Precision agriculture and smart farming
+- Renewable energy optimization
+- Smart grid and energy management
+- Sustainable transportation and logistics
+- Waste management and recycling
+- Circular economy applications
+- Climate modeling and prediction
+- Conservation and biodiversity monitoring
+
+**Key Features:**
+- 60+ slides with real-world examples
+- Multiple images (pt03_ prefixed, properly sized)
+- 16 consolidated citation lines with author-date format
+- Case studies from industry leaders
+- Quantified environmental impact data
+
+**Build Outputs:**
+- HTML: `SAG_Part_03_Cases.html`
+- PDF: `SAG_Part_03_Cases.pdf`
+
+---
+
+### SAG_Part_03_GroupExercise.md
+
+**Location:** [slides/SAG_Part_03_GroupExercise.md](slides/SAG_Part_03_GroupExercise.md)
+
+**Description:** "Group Work Exercise - Designing Sustainable AI Systems"
+
+**Exercise Structure:**
+- Setup (10 min) - Form groups and select scenario
+- Design (30 min) - Design sustainable AI system
+- Ethics (15 min) - Identify ethical considerations
+- Present (15 min) - Present solutions to class
+- Synthesis (15 min) - Reflect and connect learnings
+- Total: 90 minutes (1.5 hours)
+
+**Features:**
+- Three scenario options (Smart City, Agricultural AI, E-Waste Management)
+- Design thinking framework
+- Ethical analysis prompts
+- Presentation guidelines
+- Reflection questions
+
+**Build Outputs:**
+- HTML: `SAG_Part_03_GroupExercise.html`
+- PDF: `SAG_Part_03_GroupExercise.pdf`
+
+---
+
+## Citation Standardization System
+
+### Overview
+
+All course presentations now use a standardized citation format that separates in-slide citations from the complete reference list.
+
+### Implementation
+
+**Title Slide Reference:**
+Every presentation includes a link to the master reference list on the title slide:
+```markdown
+###### Full reference list available at [GitHub](https://github.com/romanmesicek/rai-sai25/blob/main/resources/references.md)
+```
+
+**In-Slide Citations:**
+Citations use compact author-date format with H6 heading:
+```markdown
+###### Sources: Author, Year
+###### Sources: Author1, Year1; Author2, Year2; Author3, Year3
+```
+
+**Features:**
+- Single space after `######`
+- Semicolon-separated multiple sources
+- Consistent author-date format
+- Inline placement below relevant content
+- No duplicate references
+
+**Image Credits:**
+Image credits are preserved separately from source citations:
+```markdown
+###### Image: Source description
+###### Photo by Name (Unsplash)
+```
+
+### Master Reference List
+
+**File:** [resources/references.md](resources/references.md)
+
+**Statistics:**
+- 100+ references in APA 7th edition format
+- Alphabetically sorted
+- Includes all sources from Parts 01, 02, and 03
+- Automatically deployed as styled HTML page
+- Accessible via Resources → Literature section
+
+**Coverage:**
+- Academic journal articles
+- Technical reports
+- Standards and frameworks
+- Books and monographs
+- Online resources and datasets
+
+### Benefits
+
+1. **Consistency:** Uniform citation style across all presentations
+2. **Readability:** Compact citations don't clutter slides
+3. **Maintainability:** Single source of truth for references
+4. **Accessibility:** Web-accessible reference list with search functionality
+5. **Academic Integrity:** Complete APA 7 citations for all sources
 
 ---
 

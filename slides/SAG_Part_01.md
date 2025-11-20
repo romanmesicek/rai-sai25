@@ -19,6 +19,8 @@ Roman Mesicek
 
 SAG Part 1
 
+###### Full reference list available at [GitHub](https://github.com/romanmesicek/rai-sai25/blob/main/resources/references.md)
+
 ---
 
 <!-- _class: chapter -->
@@ -31,7 +33,7 @@ SAG Part 1
 
 # The Anthropocene
 
-###### Steffen, W., Crutzen, P. J., & McNeill, J. R. (2016). The Anthropocene: Are humans now overwhelming the great forces of nature?. In The New World History (pp. 440-459). University of California Press.
+###### Sources: Steffen et al., 2016
 
 ![width:700px center](images/pt01_slide04_img1_1206x240.png)
 ![bg](images/pt01_slide04_img2_692x745.jpg)
@@ -55,7 +57,7 @@ An [Introduction by Johan Rockström (TED Talk, 2010)](https://www.youtube.com/w
 
 ![Pathways](images/pt01_slide06_img1_708x452.png)
 
-###### Steffen, W., Rockström, J., Richardson, K., Lenton, T. M., Folke, C., Liverman, D., ... & Schellnhuber, H. J. (2018). Trajectories of the Earth System in the Anthropocene. Proceedings of the National Academy of Sciences, 115(33), 8252-8259.
+###### Sources: Steffen et al., 2018
 
 
 
@@ -69,7 +71,7 @@ An [Introduction by Johan Rockström (TED Talk, 2010)](https://www.youtube.com/w
 
 Defining a safe operating space for humanity.
 
-###### The evolution of the planetary boundaries framework. (Credit: Azote for Stockholm Resilience Centre, Stockholm University. Based on Sakschewski and Caesar et al. 2025, Richardson et al. 2023, Steffen et al. 2015, and Rockström et al. 2009).
+###### Sources: Sakschewski et al., 2025; Richardson et al., 2023; Steffen et al., 2015; Rockström et al., 2009. Visualization: Azote for Stockholm Resilience Centre
 
 ---
 
@@ -81,7 +83,7 @@ Defining a safe operating space for humanity.
 
 ![bg left 90%](images/pt01_slide08_img1_680x680.png)
 
-###### Raworth, K. (2018). Doughnut economics: Seven ways to think like a 21st century economist. Chelsea Green Publishing.
+###### Sources: Raworth, 2018
 
 ---
 
@@ -96,7 +98,7 @@ The inner ring of the Doughnut, the "Social Foundation", sets a boundary for mee
 
 <div class="col">
 
-The outer ring of the Doughnut, the "Ecological Ceiling", sets a boundary for a healthy planetary home.  This ceiling has been defined by the framework of 9 planetary boundaries. Since its creation in 2009 the framework has been revised several times. In the latest update (2023), six of the nine boundaries have been transgressed. Human activity is overshooting many of the planetary boundaries.
+The outer ring of the Doughnut, the "Ecological Ceiling", sets a boundary for a healthy planetary home. This ceiling has been defined by the framework of 9 planetary boundaries. Since its creation in 2009 the framework has been revised several times. In the latest update (2023), six of the nine boundaries have been transgressed. Human activity is overshooting many of the planetary boundaries.
 
 </div>
 </div>
@@ -109,7 +111,7 @@ The outer ring of the Doughnut, the "Ecological Ceiling", sets a boundary for a 
 
 ![bg right 90%](images/pt01_slide10_img1_1080x1079.png)
 
-###### Fanning, A. L., & Raworth, K. (2025). Doughnut of social and planetary boundaries monitors a world out of balance. Nature, 646(8083), 47-56.
+###### Sources: Fanning & Raworth, 2025
 
 <!-- Notes: 
 ---
@@ -118,7 +120,7 @@ The outer ring of the Doughnut, the "Ecological Ceiling", sets a boundary for a 
 <!-- _class: groupwork -->
 
 <!-- Notes: 
-# State of the world  - Connections
+# State of the world - Connections
 
 ## Question
 
@@ -201,10 +203,10 @@ Two different schools of economics.
 
 <style scoped>
 .cols {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  gap: 2rem;
-  padding-right: 1rem;
+ display: grid;
+ grid-template-columns: 50% 50%;
+ gap: 2rem;
+ padding-right: 1rem;
 }
 </style>
 
@@ -257,10 +259,10 @@ Aus <https://www.footprintnetwork.org/2015/09/23/eight-countries-meet-two-key-co
 
 <style scoped>
 .cols {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  gap: 2rem;
-  padding-right: 1rem;
+ display: grid;
+ grid-template-columns: 50% 50%;
+ gap: 2rem;
+ padding-right: 1rem;
 }
 </style>
 
@@ -302,8 +304,7 @@ Partnership - to mobilize the means required to implement this agenda through a 
 ---
 
 # SDGs according to the „shell modell“
-
-###### Source: Jarker/Lokrantz/Azote
+###### Visualization: Jarker/Lokrantz/Azote
 
 ![width:750px center](images/pt01_slide24_img1_885x566.png)
 
