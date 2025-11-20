@@ -532,9 +532,9 @@ jobs:
                   </div>
           EOF
 
-            # Subsection 2: Course Exercise Guides (Anleitungen)
+            # Subsection 2: Course Exercise Guides
             cat >> dist/index.html << 'EOF'
-                  <h3 style="font-size: 1.3rem; font-weight: 500; margin: 2rem 0 1rem 0; color: #555;">Course Exercise Guides (Anleitungen)</h3>
+                  <h3 style="font-size: 1.3rem; font-weight: 500; margin: 2rem 0 1rem 0; color: #555;">Course Exercise Guides</h3>
                   <div class="slides">
           EOF
 
