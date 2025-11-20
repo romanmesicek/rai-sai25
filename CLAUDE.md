@@ -907,15 +907,21 @@ For questions, issues, or contributions:
 ## Recent Updates (November 20, 2025)
 
 ### Website Restructuring
-- **Unified Resources Section:** Consolidated all course materials under single Resources section with four subsections
-- **New Structure:**
-  - Downloads (Papers and Studies)
+- **Split Course Slides:** Separated into two subsections
+  - Course Lecture Presentations (main lectures)
+  - Course Exercise Guides (GroupExercise files)
+- **Unified Resources Section:** Consolidated all materials under Resources with four subsections
+  - Downloads (Papers and Studies) → now links to dedicated sub-page
   - Literature (APA Reference List)
   - Useful Tools
   - External Links
 - **Removed:** Separate "Literature & Papers" top-level section
 
 ### New Features
+- **Downloads Page:** Created `resources/downloads.md` as dedicated page for paper downloads
+  - Organized by category (Business Ethics/CSR, Sustainability)
+  - Direct download links to PDFs
+  - Cross-references to Literature section
 - **References Page:** Added `resources/references.md` with complete APA 7th edition reference list
 - **23 Citations:** All sources from course slides compiled and formatted alphabetically
 - **Smart Subsections:** Each subsection only appears if content exists

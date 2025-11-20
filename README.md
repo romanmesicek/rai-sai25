@@ -28,8 +28,16 @@ This course explores the intersection of artificial intelligence and environment
 ## 🌐 Course Website
 
 All materials are automatically deployed to GitHub Pages:
-- **📊 Slides** - HTML and PDF presentations
-- **🔗 Resources** - Downloads, literature references, tools, and external links
+
+**📊 Course Slides**
+- Course Lecture Presentations
+- Course Exercise Guides
+
+**🔗 Resources**
+- Downloads (Academic Papers)
+- Literature (APA Reference List)
+- Useful Tools
+- External Links
 
 **Visit: [https://romanmesicek.github.io/rai-sai25/](https://romanmesicek.github.io/rai-sai25/)**
 
@@ -43,10 +51,11 @@ rai-sai25/
 │   └── themes/             # Marp presentation themes
 │       └── neutral.css     # Custom neutral theme
 ├── resources/              # Additional course materials (Markdown)
+│   ├── downloads.md        # Downloads page for papers
 │   ├── references.md       # APA-style reference list
-│   ├── useful-tools.md
-│   ├── external-links.md
-│   └── contact-support.md
+│   ├── useful-tools.md     # AI and sustainability tools
+│   ├── external-links.md   # External resources
+│   └── contact-support.md  # Contact information
 ├── papers/                 # Academic papers (PDFs)
 │   └── *.pdf              # Course reference papers
 ├── .github/workflows/      # GitHub Actions
@@ -83,22 +92,10 @@ theme: neutral
 ### Adding Papers
 1. Copy PDF to `papers/` directory
 2. Use format: `author-year-topic.pdf`
-3. Push - appears on website with download button
+3. Update `resources/downloads.md` with paper details
+4. Push - appears on downloads page automatically
 
 See [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md) for details.
-
-### Available Papers
-
-The following academic papers are available in the repository:
-
-- **Carroll (1991)** - The Pyramid of Corporate Social Responsibility
-- **Dyllick & Muff (2015)** - True Business Sustainability
-- **Fanning & Raworth (2025)** - World Out of Balance
-- **Kramer & Porter (2006)** - Strategy and Society
-- **Laurel et al. (2024)** - Dimensions of the Doughnut
-- **Zadek (2004)** - The Path to Corporate Responsibility
-
-All papers can be accessed and downloaded from the [course website](https://romanmesicek.github.io/rai-sai25/).
 
 ## 🛠️ Technology Stack
 
