@@ -107,7 +107,7 @@ Speaker notes:
 |------------------------------|------------------------|
 | **Data Centers**             | 3-4% global electricity |
 | **AI Workloads**             | 10-15% of data center energy |
-| **Growth Rate**              | 30% CAGR through 2030 |
+| **Growth Rate**              | 30% Compound Annual Growth Rate (CAGR) through 2030 |
 | **2030 Projection**          | 415 → 945 TWh |
 
 <br>
@@ -164,7 +164,7 @@ Speaker notes:
 - 20-50 questions = 500ml water
 - 300M weekly users = swimming pool daily
 
-**Hidden Multiplier:** Each response generated 3-5x, best selected
+**Hidden Multiplier:** Each response generates 3-5x more
 
 ###### Sources: de Vries, 2023; Li et al., 2023
 
@@ -188,8 +188,7 @@ Speaker notes:
 | **Microsoft** | +29% since 2020 | "AI acceleration" |
 | **Meta** | +66% since 2019 | Data center expansion |
 
-> "The exponential growth in AI is straining our net-zero commitments" 
-> - Microsoft Sustainability Report 2024
+> "The exponential growth in AI is straining our net-zero commitments" (Microsoft, 2024)
 
 ###### Sources: Google, 2024; Microsoft, 2024; Meta, 2024
 
@@ -216,7 +215,7 @@ Speaker notes:
 - Arizona, Singapore, Northern Virginia hotspots
 - Competition with agriculture and communities
 
-**Per Query:** 16.9ml water evaporated forever
+**Per Query:** 16.9ml water evaporated
 
 ###### Sources: Li et al., 2023; Mytton, 2021; Microsoft, 2024
 
@@ -246,7 +245,7 @@ Speaker notes:
 
 **Mining Impact:**
 - Dysprosium, Terbium, Cobalt extraction
-- Child labor in DRC (cobalt)
+- Child labor in mining, (e.g. proven cases in Cobalt mines Democratic Republic of the Congo)
 - Water pollution in rare earth processing
 
 ###### Sources: Crawford & Joler, 2018; USGS, 2024; Forti et al., 2020
@@ -261,7 +260,7 @@ Speaker notes:
 
 ---
 <!-- _class: compact -->
-# The Jevons Paradox (Rebound Effect) in AI
+# The Rebound Effect in AI
 
 ## Why Efficiency Gains Fail
 
@@ -304,13 +303,13 @@ Speaker notes:
 **Labor Disruption:**
 - **47% of jobs** at high automation risk
 - **450,000** fossil fuel workers displaced
-- **87% lack** retraining access
+- **87% lack** re-training access
 
 </div>
 
 <div class="col">
 
-**Environmental Injustice:**
+**Environmental & Social Injustice:**
 - Data centers in **65% minority communities** (USA)
 - **70% e-waste** exported to Global South
 - Low-income pay **3x more** per kWh for AI services
@@ -352,15 +351,15 @@ Speaker notes:
 
 **Speed Transformation:**
 - Traditional: 90 days for 1000-year simulation
-- AI-Enhanced: **12 hours** (University of Washington)
-- Impact: Test 100x more scenarios
+- AI-Enhanced: **12 hours**
+- Impact: Test 100x more scenarios in the same time
 
 **Breakthrough Applications:**
 - Hurricane paths: 85% accuracy at 7 days
 - Regional downscaling: 10km → 1km resolution
-- Tipping point detection: 2 years advance warning
+- Tipping point detection: advance prediction with scenarios 
 
-**Market Growth:** €266M (2024) → €1.2B (2029)
+**Estimated Market Growth:** €266M (2024) → €1.2B (2029)
 
 ###### Sources: Bi et al., 2023; University of Washington, 2024
 
@@ -437,17 +436,17 @@ Speaker notes:
 
 ## Immediate Carbon Wins
 
-**Google's Fleet Impact (2024):**
+**Google's Fleet Management Impact (2024):**
 - Fuel-efficient routing: **2.7M tons CO₂** saved
 - Green Light (traffic): **30% fewer stops**
 - Contrails reduction: **54% with American Airlines**
 
 **Logistics Optimization:**
-- UPS ORION: **100,000 tons CO₂/year**
+- UPS: **100,000 tons CO₂/year**
 - DHL: **15% fuel reduction**
-- Maersk + IBM: **20% empty container reduction**
+- Maersk: **20% empty container reduction**
 
-**Urban Impact:** 700+ cities using AI traffic management
+**Urban Impact:** 700+ cities alreadyusing AI traffic management
 
 ###### Sources: Google, 2024; UPS, 2024; C40 Cities, 2024
 
@@ -753,7 +752,7 @@ Speaker notes:
 <!-- _class: compact -->
 # Three Pathways Forward
 
-## Your Choice to Make
+## The Choice to Make
 
 **Path 1: Business-as-Usual**
 → 2% global emissions by 2030
@@ -825,36 +824,4 @@ Speaker notes:
 - Your homework: Calculate your AI carbon footprint
 - Final question: "What will you do differently tomorrow?"
 - Image suggestion: Balanced scale with AI and Earth
--->
-
----
-
-# Key References & Resources
-
-**Essential Reading:**
-- Rohde et al. (2021). Nachhaltigkeitskriterien für künstliche Intelligenz. IÖW.
-- Crawford & Joler (2018). Anatomy of an AI System.
-- Future Earth (2024). Digital Transformation for Sustainability.
-
-**Organizations to Follow:**
-- Climate Change AI (climatechange.ai)
-- Green Algorithms (green-algorithms.org)  
-- AI Now Institute (ainowinstitute.org)
-
-**Austrian Initiatives:**
-- Circular Futures Platform
-- Green Tech Cluster Austria
-- AIT Austrian Institute of Technology
-
-**Your Next Steps:**
-- Calculate your research carbon footprint
-- Join Climate Change AI community
-- Advocate for green computing at IMC
-
-<!--
-Speaker notes:
-- QR code for full bibliography (100+ sources)
-- Slack channel for ongoing discussion
-- Office hours for career guidance
-- Thank you - now let's discuss!
 -->

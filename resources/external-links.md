@@ -3,7 +3,7 @@
 # External Resources & Links
 
 ## Data and Reports
-- **Stockholm Resilience Centre "AI for a planet under pressure" [https://www.stockholmresilience.org/](https://www.stockholmresilience.org/news--events/ai-for-a-planet-under-pressure.html)
+- **Stockholm Resilience Centre "AI for a planet under pressure"** [https://www.stockholmresilience.org/](https://www.stockholmresilience.org/news--events/ai-for-a-planet-under-pressure.html)
 - **IEA "Energy and AI"** [https://www.iea.org/](https://www.iea.org/reports/energy-and-ai)
 - **McKinsey "AI for social good"** [https://www.mckinsey.com](https://www.mckinsey.com/~/media/mckinsey/business%20functions/quantumblack/our%20insights/ai%20for%20social%20good/2024/ai-for-social-good-improving-lives-and-protecting-the-planet-v2.pdf)
 

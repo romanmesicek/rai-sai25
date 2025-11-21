@@ -11,8 +11,9 @@ order: 1
 # Sustainability and AI for Green
 ## Introduction
 
+IMC University of Applied Sciences Krems, Austria
 Roman Mesicek
-UAS IMC Krems, Winter Term 2025
+
 
 ---
 
