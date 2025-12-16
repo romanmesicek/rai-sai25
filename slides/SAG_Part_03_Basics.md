@@ -644,9 +644,8 @@ Design for longevity → Modular upgrades → Reuse → Refurbish → Recycle
 - **90% recovery rate** possible
 - **60% cost savings** long-term
 
-**Austrian Leadership:** Circular Futures platform, 230 companies, €5.7B funding
 
-###### Sources: Ellen MacArthur Foundation, 2024; Austrian Federal Ministry, 2024; EU Commission, 2024
+###### Sources: Ellen MacArthur Foundation, 2024; EU Commission, 2024
 
 <!--
 Speaker notes:
