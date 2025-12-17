@@ -93,6 +93,9 @@ AUTO_COLUMNS_QUICKREF.md
 00_material/
 _extraction/
 
+# Development folder (drafts, alternate versions)
+development/
+
 # AI files
 CLAUDE.md
 
