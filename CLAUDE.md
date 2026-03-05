@@ -1086,5 +1086,36 @@ For questions, issues, or contributions:
 
 ---
 
-*Last Updated: November 20, 2025*
+## Recent Updates (March 5, 2026)
+
+### SCOPE AI Framework — Publication
+
+The SCOPE concept paper has been added to `publications/` and submitted as a preprint.
+
+**Paper:** `publications/SCOPE_AI_Framework_Concept_Paper.md`
+**Title:** SCOPE: A Decision Framework for Evaluating the Sustainability and Ethics of AI Adoption
+**Author:** Roman Mesicek, Sustainability Skills Academy, Austria
+**Preprint:** https://osf.io/preprints/socarxiv/anjt9_v1 (submitted, under review)
+**License:** CC BY 4.0
+
+**SCOPE Framework — Five Dimensions:**
+- **S** — Sufficiency: Is AI necessary here?
+- **C** — Carbon: What is the full environmental footprint?
+- **O** — Outcomes: Who benefits and who bears costs?
+- **P** — Power: Who controls the system?
+- **E** — Endurance: Is the solution sustainable long-term?
+
+**Working files** (not in repo, kept in `pub-dev/`):
+- Literature review files (01–07), research plan, project documentation
+- PDF export: `SCOPE_AI_Framework_Concept_Paper.pdf`
+
+**Pending — see `NEXT_STEPS.md` for details:**
+- DOI assignment (pending SocArXiv review)
+- Repo updates once DOI is available (badges, BibTeX, APA citation)
+- Teaching whitepaper cross-references and potential OSF upload
+- Optional journal submission
+
+---
+
+*Last Updated: March 5, 2026*
 *Generated and maintained with Claude AI Assistant*
