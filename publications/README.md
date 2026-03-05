@@ -28,6 +28,27 @@ Publications are version-controlled through Git commits and tags. GitHub maintai
 
 ## Current Publications
 
+### SCOPE AI Framework Concept Paper
+
+**File:** `SCOPE_AI_Framework_Concept_Paper.md`
+**Latest Update:** March 5, 2026
+**Description:** Concept paper introducing the SCOPE framework, a decision framework for evaluating the sustainability and ethics of AI adoption. Covers five dimensions (Sufficiency, Carbon, Outcomes, Power, Endurance), reviews existing frameworks, and positions SCOPE within current academic literature.
+
+**Topics Covered:**
+- Literature review of existing AI ethics and sustainability frameworks
+- Five SCOPE dimensions with theoretical foundations
+- Comparative analysis against existing frameworks
+- Illustrative application scenario
+- Discussion of contributions, limitations, and future research
+
+**Citation:**
+```
+Mesicek, R. (2026). SCOPE: A decision framework for evaluating the
+sustainability and ethics of AI adoption. Sustainability Skills Academy.
+```
+
+---
+
 ### RAI-SAG25 Whitepaper
 
 **File:** `RAI-SAG25_Whitepaper.md`
@@ -68,4 +89,4 @@ If you wish to contribute feedback, corrections, or suggestions:
 
 ---
 
-*Last Updated: October 19, 2025*
+*Last Updated: March 5, 2026*

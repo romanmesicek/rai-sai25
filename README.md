@@ -62,6 +62,9 @@ rai-sai25/
 │   └── *.pdf              # Course reference papers
 ├── .github/workflows/      # GitHub Actions
 │   └── deploy-slides.yml  # Automated deployment
+├── publications/           # Academic publications
+│   ├── SCOPE_AI_Framework_Concept_Paper.md
+│   └── RAI-SAG25_Whitepaper.md
 ├── README.md              # This file
 ├── SAI_Syllabus.md        # Complete course syllabus
 └── DEPLOYMENT_GUIDE.md    # Deployment documentation
@@ -128,4 +131,4 @@ This educational content is shared under [Creative Commons Attribution 4.0 Inter
 
 ---
 
-*Last updated: November 20, 2025*
+*Last updated: March 5, 2026*
