@@ -41,10 +41,27 @@ Publications are version-controlled through Git commits and tags. GitHub maintai
 - Illustrative application scenario
 - Discussion of contributions, limitations, and future research
 
-**Citation:**
+**DOI:** [10.31235/osf.io/anjt9_v1](https://doi.org/10.31235/osf.io/anjt9_v1)
+**Preprint:** [SocArXiv](https://osf.io/preprints/socarxiv/anjt9_v1)
+
+**Citation (APA 7):**
 ```
 Mesicek, R. (2026). SCOPE: A decision framework for evaluating the
-sustainability and ethics of AI adoption. Sustainability Skills Academy.
+sustainability and ethics of AI adoption. SocArXiv.
+https://doi.org/10.31235/osf.io/anjt9_v1
+```
+
+**Citation (BibTeX):**
+```bibtex
+@article{mesicek2026scope,
+  title     = {SCOPE: A Decision Framework for Evaluating the Sustainability
+               and Ethics of AI Adoption},
+  author    = {Mesicek, Roman},
+  year      = {2026},
+  publisher = {SocArXiv},
+  doi       = {10.31235/osf.io/anjt9_v1},
+  url       = {https://doi.org/10.31235/osf.io/anjt9_v1}
+}
 ```
 
 ---

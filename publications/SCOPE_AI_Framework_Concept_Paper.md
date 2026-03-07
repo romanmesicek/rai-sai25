@@ -392,6 +392,7 @@ World Economic Forum. (2025). *Future of Jobs Report 2025*. https://www.weforum.
 *Sustainability Skills Academy, Austria*
 *Correspondence: roman.mesicek@sustainability-skills.at*
 *ORCID: https://orcid.org/0000-0002-8216-2278*
+*DOI: https://doi.org/10.31235/osf.io/anjt9_v1*
 
 *This work is licensed under a Creative Commons Attribution 4.0 International License (CC BY 4.0).*
 *Source repository: https://github.com/romanmesicek/rai-sai25*

@@ -1,5 +1,7 @@
 # Sustainability and AI for Green (RAI SAG 25/26)
 
+[![DOI](https://img.shields.io/badge/DOI-10.31235%2Fosf.io%2Fanjt9__v1-blue)](https://doi.org/10.31235/osf.io/anjt9_v1)
+
 **Master Course Repository | Winter Semester 2025**
 
 This repository contains course materials, presentations, and student contributions for the Master's course "Sustainability and AI for Green" (RAI SAG 25/26).
